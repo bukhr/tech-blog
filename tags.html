@@ -1,0 +1,35 @@
+---
+layout: page
+title: "Etiquetas"
+description: >- 
+  Tech Blog de Buk
+background: "/assets/images/global/index.png"
+---
+{% include tags-list.html %}
+
+<div class="tags-post">
+  {% assign tags = site.tags | sort %}
+  {% for tag in tags %} 
+  <h3 id="{{ tag[0] | slugify }}" class="title"> {{ tag[0] }}  <small class="badge badge-pill badge-dark">{{ tag | last | size }}</small></h3>
+  <ul class="later on">
+    {% for post in tag[1] %}
+    
+    <li>
+      <a class="post-subtitle" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      <p class="post-meta">
+        Escrito por
+        {% if post.author %}
+          {{ post.author }}
+        {% else %}
+          {{ site.author }}
+        {% endif %}
+        el
+        {% assign month = post.date | date: "%-m" | minus: 1 %}
+        {{ post.date | date: '%-d' }} de {{ site.data.months[month] }} de {{ post.date | date: '%-Y' }}
+      </p>
+    </li>
+    {% endfor %}
+  </ul>
+  <hr/>
+  {% endfor %}
+</div>

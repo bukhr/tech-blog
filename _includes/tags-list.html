@@ -1,0 +1,11 @@
+<aside class="tags-list">
+  <h4>{{ site.tags_title }}</h4>
+  <div class="list">
+    {% assign tags = site.tags | sort %}
+    {% for tag in tags %}
+    <a href="/tags#{{ tag | first | slugify }}">
+      {{ tag[0] | replace:'-', ' ' }} <small class="badge badge-pill badge-info">{{ tag | last | size }}</small>
+    </a>
+    {% endfor %}
+  </div>
+</aside>

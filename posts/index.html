@@ -1,0 +1,52 @@
+---
+layout: page
+title: Todos los artículos
+description: >- # this means to ignore newlines until "baseurl:"
+  Detrás de bambalinas de la producción de Buk
+background: '/assets/images/global/index.png'
+---
+{% for post in paginator.posts %}
+
+<article class="post-preview">
+  <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+    <h2 class="post-title">{{ post.title }}</h2>
+    {% if post.subtitle %}
+    <h3 class="post-subtitle">{{ post.subtitle }}</h3>
+    {% else %}
+    <h3 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</h3>
+    {% endif %}
+  </a>
+  <p class="post-meta">Por
+    {% if post.author %}
+      {{ post.author }}
+    {% else %}
+      {{ site.author }}
+    {% endif %}
+    el
+    {% assign month = post.date | date: "%-m" | minus: 1 %}
+    {{ post.date | date: '%-d' }} de {{ site.data.months[month] }} de {{ post.date | date: '%-Y' }}  
+    &middot; {% include read_time.html content=post.content %}
+  </p>
+</article>
+
+<hr>
+
+{% endfor %}
+
+<!-- Pager -->
+{% if paginator.total_pages > 1 %}
+
+<div class="clearfix">
+
+  {% if paginator.previous_page %}
+  <a class="btn btn-buk float-left" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr;
+    Siguientes</a>
+  {% endif %}
+
+  {% if paginator.next_page %}
+  <a class="btn btn-buk float-right" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Anteriores &rarr;</a>
+  {% endif %}
+
+</div>
+
+{% endif %}

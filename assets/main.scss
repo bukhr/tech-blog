@@ -1,0 +1,152 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "styles";
+
+.btn-buk {
+  color: white;
+  background-color: #E2AD48;
+  border-color: #E2AD48;
+}
+
+.row p {
+  overflow: auto;
+}
+
+.footer-section-2 {
+  align-items: center;
+  font-family: Lato, sans-serif;
+  font-weight: 200;
+  background-color: #2f48a7;
+  height: 150px;
+  padding: 0 40px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+
+  .web {
+    font-size: 40px;
+  }
+
+  .mission {
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+
+    .company-name {
+      font-size: 40px;
+    }
+
+    span {
+      color: #E2AD48;
+    }
+  }
+}
+
+// Styling for the masthead
+header.masthead {
+  .page-heading,
+  .site-heading {
+    @media only screen and (min-width: 768px) {
+      h1 {
+        font-size: 60px;
+      }
+    }
+  }
+
+  .overlay {
+    background-color: #000;
+  }
+}
+
+.badge {
+  background-color: #2f48a7;
+}
+
+// Styling for meta (Author, date and reading time)
+.post-meta {
+  font-size: 18px;
+  font-style: italic;
+  margin-top: 0;
+  color: $gray-600;
+
+  > a {
+    text-decoration: none;
+    color: $gray-900;
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+      color: $primary;
+    }
+  }
+}
+
+// styles within posts
+.container p img {
+  max-width: 100%;
+}
+
+.container p a,
+.container li a {
+  text-decoration: underline;
+}
+
+.container h2,
+.container h3,
+.container h4,
+.container h5,
+.container h6 {
+  margin-top: 40px;
+}
+
+// 404
+.error-404 {
+  margin-top: 150px;
+  min-height: 400px;
+  background: url('/assets/images/global/404.svg') right bottom no-repeat;
+  background-size: contain;
+
+  @media (max-width: 992px) {
+    margin-top: 100px;
+    min-height: 600px;
+  }
+}
+
+// tags list home
+.tags-list {
+  $s: 30px;
+
+  margin: $s 0;
+  font-size: 18px;
+  
+  .list {
+    margin-top: $s;
+    padding: $s/2;
+    border: 1px solid rgba(0,0,0,.1);
+
+    a {
+      margin-right: 10px;
+      color: $gray-600;
+    }
+
+    .badge {
+      font-size: 12px;
+    }
+  }
+}
+
+// tags page
+.tags-post {
+  margin-top: 60px;
+
+  .title {
+    margin-top: 30px;
+  }
+
+  .badge {
+    font-size: 16px;
+  }
+}
