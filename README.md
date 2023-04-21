@@ -12,7 +12,7 @@ Abre tu navegador y dirígete a: <http://localhost:4000>
 
 ## Cómo agregar un post
 
-Primero revisa, en este [spreadshet](https://docs.google.com/spreadsheets/d/1eXp_dkgSqAkTG6fLxqE4jqQJEKXiYJbceDeTFTN74KI/edit#gid=0), que el tema a tratar no haya sido abordado previamente. Si en efecto es un nuevo tema, por favor añádelo para que todos sepan que ya lo estás escribiendo.\
+Primero revisa, en este [notion](https://www.notion.so/bukhr/Blog-1872a9fbf389428dae20b06a8bfdbff9), que el tema a tratar no haya sido abordado previamente. Si en efecto es un nuevo tema, por favor añádelo para que todos sepan que ya lo estás escribiendo.\
 Recuerda que un post puede tener 1 o más autores, por lo que si tu tema ya está siendo desarrollado, puedes ofrecerte para colaborar en él.
 
 Para agregar un post, usa:
