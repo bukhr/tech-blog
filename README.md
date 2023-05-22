@@ -10,6 +10,22 @@ bundle exec jekyll serve --livereload --drafts
 
 Abre tu navegador y dirígete a: <http://localhost:4000>
 
+## Como correr el blog local (usando devbox)
+
+1. Asegurate de tener instalado [nix](https://nixos.org/) y [devbox](https://www.jetpack.io/devbox/)
+2. Ejecuta en tu maquina
+
+```sh
+devbox shell
+```
+3. Ya en tu entorno virtual ejecuta
+
+```sh
+bundle install
+bundle exec jekyll serve --livereload --drafts
+```
+4. Abre tu navegador y dirígete a: <http://localhost:4000>
+
 ## Cómo agregar un post
 
 Primero revisa, en este [notion](https://www.notion.so/bukhr/Blog-1872a9fbf389428dae20b06a8bfdbff9), que el tema a tratar no haya sido abordado previamente. Si en efecto es un nuevo tema, por favor añádelo para que todos sepan que ya lo estás escribiendo.\
