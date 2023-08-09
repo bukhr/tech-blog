@@ -23,10 +23,10 @@ te dejo de inmediato con el consejo que te va a convertir en un ingeniero de otr
 
 Medio en broma, medio en serio, así de simple, en inglés el consejo era “don't be terrible”. Ten un poco de paciencia y te explico con unos ejemplos a qué me refiero.
 
-### 1. Escribir la minuta ###
+### 1. El action item de la retro ###
 
-De seguro en alguna ocasión algún jefe te pidió escribir una minuta para una reunión, o tú mismo te ofreciste a hacerlo. 
-Resulta que un par de horas después de la reunión, te piden la minuta y… olvidaste hacerlo. Pesimo 😞
+De seguro tras salir de la retrospectiva te anotaste para algun action item, habitualmente está en una actividad voluntaria, y tras llegar a la siguiente retro
+tu jefe te pregunta como te fue con el action item y… olvidaste hacerlo. Pesimo 😞
 
 En estas tareas sencillas, es donde se construye confianza y muchos fallan en darle la importancia que merece, ya que están más preocupados en convertirse en el 10x programmer,
 memorizando cada patrón de diseño, estructura de datos y algoritmo en leetcode. 
