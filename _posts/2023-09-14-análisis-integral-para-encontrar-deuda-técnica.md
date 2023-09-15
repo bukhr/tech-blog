@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Análisis integral para encontrar deuda técnica
+title: "Deuda Técnica: Descubriendo lo que realmente debes pagar"
 subtitle: Tenemos tiempo para resolver deuda técnica, ¿qué resolvemos? ¿Cómo sabemos
-  qué es lo relevante? Nada mejor que los datos hablen por si solos.
+  qué es lo relevante? Que los datos hablen por si solos.
 author: Meraioth Ulloa
 images_path: "/assets/images/2023-09-14-analisis-deuda-tecnica"
 tags: deuda tecnica, sonarcloud, sentry, codemaat
