@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Análisis integral para encontrar deuda técnica
-subtitle: Tenemos tiempo para resolver deuda técnica, que resolvemos? cómo sabemos
-  que es lo relevante? nada mejor que los datos hablen por si sólo
+subtitle: Tenemos tiempo para resolver deuda técnica, ¿qué resolvemos? ¿Cómo sabemos
+  qué es lo relevante? Nada mejor que los datos hablen por si solos.
 author: Meraioth Ulloa
 images_path: "/assets/images/2023-09-14-analisis-deuda-tecnica"
 tags: deuda tecnica, sonarcloud, sentry, codemaat
 background: "/assets/images/2023-09-14-analisis-deuda-tecnica/portada.jpeg"
 date: 2023-09-14 23:56 -0300
 ---
-En buk día a día nos enfocamos en la calidad del código que estamos escribiendo, porque entendemos que una mejor calidad de código permitirá que podamos resolver problemas a nuestros clientes de forma más rápida, entregándoles nuevas features en menos tiempo.
+En Buk día a día nos enfocamos en la calidad del código que estamos escribiendo, porque entendemos que nos permitirá resolver problemas a nuestros clientes de forma más rápida, entregándoles nuevas features en menos tiempo.
 
 He aquí el dilema que muchos de ustedes han visto en distintos contextos, que un proyecto sea rápido, barato y bueno, es una utopía, siempre debemos sacrificar algo para cubrir otro.
 
@@ -17,28 +17,28 @@ He aquí el dilema que muchos de ustedes han visto en distintos contextos, que u
 
 Este fenómeno es bien conocido en la industria del software y usualmente lo que se sacrifica es la calidad, generando el concepto de [deuda técnica](https://www.outsystems.com/glossary/what-is-technical-debt/), existe mucha bibliografía al respecto por lo que no ahondaré en el tema, lo importante de la analogía es que como cualquier deuda, si no es pagada genera intereses y cada vez se vuelve más dificil de llevarla a 0.
 
-En buk intuimos que nuestras features van dejando algún grado de deuda técnica, es por eso que apostamos de forma media arbitraria que el 20% del tiempo de nuestros sprints lo atacaríamos a deuda técnica.
+En Buk intuimos que nuestras features van dejando algún grado de deuda técnica, es por eso que apostamos de forma media arbitraria que el 20% del tiempo de nuestros sprints lo atacaríamos a deuda técnica.
 
-Happy problem! tenemos presupuesto para mejorar nuestro codigo! ahora el problema que nos surgió es, en que invertimos ese tiempo?.
+Happy problem! ¡Tenemos presupuesto para mejorar nuestro codigo! Ahora el problema que nos surgió es, ¿en qué invertimos ese tiempo?.
 
-Decidimos mirar este problema de una manera más integral que solo usar una herramienta de análisis de código estático como lo son los cops, sonarcloud, etc.
+Decidimos mirar este problema de una manera más integral que solo usar una herramienta de análisis de código estático como lo son los cops, Sonarcloud, etc.
 
-Creemos firmemente que los síntomas de nuestra deuda técnica vuelven en forma de errores (usamos sentry para monitoreo de errores), de problemas de usabilidad (usamos freshdesk para la gestión de incidencias), de problemas de velocidad de desarrollo (usamos Jira para la gestión de nuevos features).
+Creemos firmemente que los síntomas de nuestra deuda técnica vuelven en forma de errores (usamos Sentry para monitoreo de errores), de problemas de usabilidad (usamos Freshdesk para la gestión de incidencias), de problemas de velocidad de desarrollo (usamos Jira para la gestión de nuevos features).
 
 Por esto, en una primera etapa tomamos las siguientes fuentes de datos:
 
 - **Sentry**: Análisis de errores de nuestra aplicación, nuestra heurística es que cada vez que tenemos un error en sentry tomamos el primer archivo de la traza del error para asignarle un contador (por evento, no por issue)
-- **Codemaat** (Adam Tornhill si estás leyendo, te queremos mucho): Análisis social de la interacción que tiene nuestro repositorio, usando la historia de nuestros commits somos capaces de obtener un promedio móvil de la cantidad de veces que un archivo es cambiado, en teoría un archivo no debería sufrir muchos cambios a lo largo del tiempo, es un warning para nosotros si lo hace. En el repo de codemaat existe un montón de métricas interesantes a nivel organizacional y de relaciones entre archivos y autores.
+- **Code Maat** (Adam Tornhill si estás leyendo, te queremos mucho): Análisis social de la interacción que tiene nuestro repositorio, usando la historia de nuestros commits somos capaces de obtener un promedio móvil de la cantidad de veces que un archivo es cambiado, en teoría un archivo no debería sufrir muchos cambios a lo largo del tiempo, es un warning para nosotros si lo hace. En el repo de Code Maat existen un montón de métricas interesantes a nivel organizacional y de relaciones entre archivos y autores.
 - **SonarCloud**: Análisis de código estático, ofrece un [montón de métricas](https%3A%2F%2Fdocs.sonarcloud.io%2Fdigging-deeper%2Fmetric-definitions%2F), nos enfocamos en Cognitive Complexity, Duplicated Lines Density y la más obvia de todas Lines of code
 - **Test Coverage**: En nuestro pipeline de CI tenemos un job que nos entrega el test coverage de nuestra app (de momento no tenemos esa parte integrada con SonarCloud, si ya lo tienes omite este paso)
 
-Otra de las particularidades de buk es que tenemos un monolito grande, por lo cual usamos codeowners para saber de qué equipo es cada archivo
+Otra de las particularidades de Buk es que tenemos un monolito grande, por lo que usamos codeowners para saber de qué equipo es cada archivo
 
-Tomando estos inputs decidimos crear un google collab (que dejaremos al final para que lo puedas probar), para ir revisando los resultados
+Tomando estos inputs decidimos crear un Google Collab (que dejaremos al final para que lo puedas probar), para ir revisando los resultados
 
 ### Sentry
 
-Usamos la API de sentry para traernos los eventos, obtenemos la traza, buscamos si contiene alguno de nuestros archivos y asumimos que el error es del primer archivo que aparece, luego contamos y agrupamos por archivo, finalmente tenemos el total de errores por archivo
+Usamos la API de sentry para traernos los eventos, obtenemos la traza, buscamos si contiene alguno de nuestros archivos y asumimos que el error es del primer archivo que aparece, luego contamos y agrupamos por archivo, finalmente tenemos el total de errores por archivo.
 
 ```python
 SENTRY_API_BASE_URL =  'Replace with your Sentry API base URL'
@@ -85,7 +85,7 @@ sentry_stats = sentry_stats.groupby('entity').agg('sum')
 
 ### Codemaat
 
-Lo primero que debemos hacer es descargar el registro de cambios de github, esto corriendo lo siguiente dentro de la carpeta de nuestro proyecto:
+Lo primero que debemos hacer es descargar el registro de cambios de Github, esto corriendo lo siguiente dentro de la carpeta de nuestro proyecto:
 
 ```bash
 git log --all --numstat --date=short --pretty=format:'--%h--%ad--%aN' --no-renames --after=2021-06-01 > logfile.log
@@ -223,11 +223,11 @@ normalized_df['summary'] = normalized_df.apply(lambda row: sum(row[col] * weight
 
 ![Matriz de datos]({{page.images_path}}/summary_data.png)
 
-Esto nos permite obtener una matriz de correlación y tener aun más información para poder tomar decisiones
+Esto nos permite obtener una matriz de correlación y tener aun más información para poder tomar decisiones.
 
 ![Correlación]({{page.images_path}}/correlation.png)
 
-Por ultimo creamos una herramienta (algo básica) basada en el repositorio de CodeMaat para poder ver las métricas de forma más visual, en la siguiente imagen se ven nuestras subcarpetas del proyecto, mientras más en rojo más lineas duplicadas y mientras más grande el circulo más líneas de código
+Por último creamos una herramienta (algo básica) basada en el repositorio de Code Maat para poder ver las métricas de forma más visual, en la siguiente imagen se ven nuestras subcarpetas del proyecto, mientras más en rojo más lineas duplicadas y mientras más grande el circulo más líneas de código.
 
 ![Lineas duplicadas]({{page.images_path}}/codemaat-like-diagram.png)
 
@@ -235,8 +235,8 @@ Por ultimo creamos una herramienta (algo básica) basada en el repositorio de Co
 
 Luego de obtener los datos y resumirlos al máximo, cruzamos esta información con nuestro roadmap para priorizar de mejor manera, creemos firmemente que resolver aquella deuda técnica de código que modificaremos en el corto plazo será un empujón para entregar mejores features a nuestros clientes.
 
-La decisión basada en datos junto al conocimiento de cada equipo, que conoce a nuestros clientes hará que podamos enfocar ese 20% de tiempo en resolver deuda técnica relevante para poder tener un mayor y mejor delivery.
+La decisión basada en datos junto al conocimiento de cada equipo, que comprende a nuestros clientes hará que podamos enfocar ese 20% de tiempo en resolver deuda técnica relevante para poder tener un mayor y mejor delivery.
 
 Este proyecto nos permitió categorizar, según las necesidades de cada equipo, los archivos y módulos que necesitan un doble click, y así pagar esa deuda que hemos ido acumulando a lo largo de los años, lo hicimos parametrizable dado que no todos los equipos tienen una gran cantidad de sentries u otros equipos donde su coverage está sobre el 80%, éstas métricas que se vuelven irrelevantes para el análisis.
 
-[Link al google collab con el step by step](https://gist.github.com/meraioth/9454b2894ce5792637043063d3a440bc)
+[Link al Google Collab con el step by step](https://gist.github.com/meraioth/9454b2894ce5792637043063d3a440bc)
