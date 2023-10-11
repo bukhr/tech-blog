@@ -17,7 +17,7 @@ He aquí el dilema que muchos de ustedes han visto en distintos contextos. Que u
 
 Este fenómeno es bien conocido en la industria del software y **usualmente lo que se sacrifica es la calidad**, generando el concepto de [deuda técnica](https://www.outsystems.com/glossary/what-is-technical-debt/). Existe mucha bibliografía al respecto por lo que no ahondaré en el tema.  Lo importante de la analogía es que **como cualquier deuda, si no es pagada genera intereses y cada vez se vuelve más dificil llevarla a 0**.
 
-En Buk intuimos que nuestras features van dejando algún grado de deuda técnica, es por eso que apostamos de forma media arbitraria que el 20% del tiempo de nuestros sprints lo atacaríamos a deuda técnica.
+En Buk intuimos que nuestras features van dejando algún grado de deuda técnica, por lo mismo, decidimos (un tanto arbitrariamente) que el 20% del tiempo de nuestros sprints, lo usaríamos para saldar esas deudas.
 
 Happy problem! ¡Tenemos presupuesto para mejorar nuestro codigo! Ahora el problema que nos surgió es, ¿en qué invertimos ese tiempo?.
 
@@ -233,10 +233,10 @@ Por último creamos una herramienta (algo básica) basada en el repositorio de C
 
 ## Conclusión
 
-Luego de obtener los datos y resumirlos al máximo, cruzamos esta información con nuestro roadmap para priorizar de mejor manera. Creemos firmemente que **resolver aquella deuda técnica de código que modificaremos en el corto plazo será un empujón para entregar mejores features a nuestros clientes**.
+Luego de obtener los datos y resumirlos al máximo, cruzamos esta información con nuestro roadmap para priorizar de mejor manera. Creemos firmemente que **resolver aquella deuda técnica del código que modificaremos en el futuro cercano será un empujón para entregar mejores features a nuestros clientes**.
 
 La decisión basada en datos junto al conocimiento de cada equipo que comprende a nuestros clientes, hará que podamos **enfocar ese 20% de tiempo en resolver deuda técnica relevante para poder tener un mayor y mejor delivery**.
 
 Este proyecto nos permitió categorizar, según las necesidades de cada equipo, los archivos y módulos que necesitan un doble click, y así pagar esa deuda que hemos ido acumulando a lo largo de los años, lo hicimos parametrizable dado que no todos los equipos tienen una gran cantidad de sentries u otros equipos donde su coverage está sobre el 80%, éstas métricas que se vuelven irrelevantes para el análisis.
 
-[Link al **Google Colab** con el step by step](https://gist.github.com/meraioth/9454b2894ce5792637043063d3a440bc)
+[Link al **Google Colab** con el step by step](https://gist.github.com/meraioth/7a4562b466067541853f5d886d538b05)
