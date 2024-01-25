@@ -10,8 +10,7 @@ date: 2024-01-22 16:28 +0100
 ---
 Quizás el título huele a clickbait, pero espero poder entregarte un consejo que sí te ayude en tu carrera como ingeniero de software.
 
-No se si te pasa como a mi, que estoy un poco aburrido de tanto consejo “esotérico” pululando por ahí: rutinas avaladas por neurólogos sobre cuál es la hora óptima de dormir o despertar,
-millonarios aconsejando trabajar 12 horas por 7 días a la semana, monstruosos toolset de herramientas para tomar notas y la manera correcta de organizarlas, u otro framework “agile” de moda. 
+No sé si te pasa como a mí, que estoy un poco aburrido de tanto consejo _esotérico_ pululando por ahí: rutinas avaladas por neurólogos sobre cuál es la hora óptima de dormir o despertar, millonarios aconsejando trabajar 12 horas por 7 días a la semana, monstruosos toolsets de herramientas para tomar notas y la manera correcta de organizarlas, u otro framework “agile” de moda. 
 
 Por estas razones, me sorprendió encontrarme hace unas semanas con una conferencia bajo el título “Grow Your Own Tech Leads • Ken Scambler • YOW! 2019” en YT, 
 la cual se aleja totalmente de de los consejos esotéricos y vuelve a algo completamente básico y esencial en los equipos, la confianza.
