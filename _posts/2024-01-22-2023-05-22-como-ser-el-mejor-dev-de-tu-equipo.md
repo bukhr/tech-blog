@@ -16,8 +16,8 @@ millonarios aconsejando trabajar 12 horas por 7 días a la semana, monstruosos t
 Por estas razones, me sorprendió encontrarme hace unas semanas con una conferencia bajo el título “Grow Your Own Tech Leads • Ken Scambler • YOW! 2019” en YT, 
 la cual se aleja totalmente de de los consejos esotéricos y vuelve a algo completamente básico y esencial en los equipos, la confianza.
 
-Este artículo no es más que un modesto resumen de la conferencia que mencioné (link al final), y en honor al tiempo que tomaste en leer esta entrada,
-te dejo de inmediato con el consejo que te va a convertir en un ingeniero de otro planeta, redoble de tambores…
+Es por esto que quiero presentarte un modesto resumen de la conferencia, y en honor al tiempo que tomaste en leer esta entrada, te dejo de inmediato con el consejo que te convertirá en un ingeniero de otro planeta. Redoble de tambores…
+
 
  > ## no lo hagas pésimo ##
 
