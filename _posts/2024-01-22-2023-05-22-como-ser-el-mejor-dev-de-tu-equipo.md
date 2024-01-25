@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cómo ser el mejor dev de tu equipo
-subtitle: Sobre cómo contruir confianza
+subtitle: Sobre cómo construir confianza
 background: "/assets/images/2023-05-22-como-ser-el-mejor-dev-de-tu-equipo/portada.png"
 images_path: "/assets/images/2023-05-22-como-ser-el-mejor-dev-de-tu-equipo"
 author: Javier Vergara
