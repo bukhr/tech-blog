@@ -8,7 +8,7 @@ author: Javier Vergara
 tags: confianza desarrollo
 date: 2024-01-22 16:28 +0100
 ---
-Bajo un título que huele a clickbait espero poder entregarte un consejo que de verdad te ayude en tu carrera como ingeniero de software
+Quizás el título huele a clickbait, pero espero poder entregarte un consejo que sí te ayude en tu carrera como ingeniero de software.
 
 No se si te pasa como a mi, que estoy un poco aburrido de tanto consejo “esotérico” pululando por ahí: rutinas avaladas por neurólogos sobre cuál es la hora óptima de dormir o despertar,
 millonarios aconsejando trabajar 12 horas por 7 días a la semana, monstruosos toolset de herramientas para tomar notas y la manera correcta de organizarlas, u otro framework “agile” de moda. 
