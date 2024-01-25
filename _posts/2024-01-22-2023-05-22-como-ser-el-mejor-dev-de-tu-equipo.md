@@ -21,7 +21,7 @@ Es por esto que quiero presentarte un modesto resumen de la conferencia, y en ho
 
  > ## no lo hagas pésimo ##
 
-Medio en broma, medio en serio, así de simple, en inglés el consejo era “don't be terrible”. Ten un poco de paciencia y te explico con unos ejemplos a qué me refiero.
+Medio en broma, medio en serio.  Así de simple. En inglés el consejo es **“don't be terrible”**. Ten un poco de paciencia y te explico con unos ejemplos a qué me refiero.
 
 ### 1. El action item de la retro ###
 
