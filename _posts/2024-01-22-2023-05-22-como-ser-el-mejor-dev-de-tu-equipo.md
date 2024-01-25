@@ -19,7 +19,7 @@ la cual se aleja totalmente de de los consejos esotéricos y vuelve a algo compl
 Es por esto que quiero presentarte un modesto resumen de la conferencia, y en honor al tiempo que tomaste en leer esta entrada, te dejo de inmediato con el consejo que te convertirá en un ingeniero de otro planeta. Redoble de tambores…
 
 
- > ## no lo hagas pésimo ##
+ > ## No lo hagas pésimo ##
 
 Medio en broma, medio en serio.  Así de simple. En inglés el consejo es **“don't be terrible”**. Ten un poco de paciencia y te explico con unos ejemplos a qué me refiero.
 
