@@ -28,7 +28,7 @@ De seguro tras salir de la retrospectiva te anotaste para algun action item, hab
 tu jefe te pregunta como te fue con el action item y… olvidaste hacerlo. Pesimo 😞
 
 En estas tareas sencillas, es donde se construye confianza y muchos fallan en darle la importancia que merece, ya que están más preocupados en convertirse en el 10x programmer,
-memorizando cada patrón de diseño, estructura de datos y algoritmo en leetcode. 
+memorizando cada patrón de diseño, estructura de datos y algoritmo en [leetcode](https://leetcode.com/). 
 
 El efecto que tiene esto en tu jefe es que tendrá que encontrar un espacio en su calendario que ya luce como un tetris
 
