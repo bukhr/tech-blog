@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Cómo ser el mejor dev de tu equipo
-subtitle: Sobre cómo construir confianza
+subtitle: El secreto está en construir confianza
 background: "/assets/images/2023-05-22-como-ser-el-mejor-dev-de-tu-equipo/portada.png"
 images_path: "/assets/images/2023-05-22-como-ser-el-mejor-dev-de-tu-equipo"
 author: Javier Vergara
 tags: confianza desarrollo
-date: 2024-01-22 16:28 +0100
+date: 2024-05-16 16:28 +0100
 ---
 Quizás el título huele a clickbait, pero espero poder entregarte un consejo que sí te ayude en tu carrera como ingeniero de software.
 
