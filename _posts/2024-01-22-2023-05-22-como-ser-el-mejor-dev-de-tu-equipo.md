@@ -12,8 +12,7 @@ Quizás el título huele a clickbait, pero espero poder entregarte un consejo qu
 
 No sé si te pasa como a mí, que estoy un poco aburrido de tanto consejo _esotérico_ pululando por ahí: rutinas avaladas por neurólogos sobre cuál es la hora óptima de dormir o despertar, millonarios aconsejando trabajar 12 horas por 7 días a la semana, monstruosos toolsets de herramientas para tomar notas y la manera correcta de organizarlas, u otro framework “agile” de moda. 
 
-Por estas razones, me sorprendió encontrarme hace unas semanas con una conferencia bajo el título “Grow Your Own Tech Leads • Ken Scambler • YOW! 2019” en YT, 
-la cual se aleja totalmente de de los consejos esotéricos y vuelve a algo completamente básico y esencial en los equipos, la confianza.
+Por estas razones, me sorprendió encontrarme hace unas semanas con una conferencia titulada **“Grow Your Own Tech Leads • Ken Scambler • YOW! 2019”** en Youtube, que se aleja totalmente de de los consejos esotéricos y vuelve a algo completamente básico y esencial en los equipos: **la confianza.**
 
 Es por esto que quiero presentarte un modesto resumen de la conferencia, y en honor al tiempo que tomaste en leer esta entrada, te dejo de inmediato con el consejo que te convertirá en un ingeniero de otro planeta. Redoble de tambores…
 
