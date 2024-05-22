@@ -10,19 +10,19 @@ background: "/assets/images/2022-01-31-cafe-codigo-concentracion/artem-riasnians
 image: /assets/images/2022-01-31-cafe-codigo-concentracion/portada_opt.jpg
     
 ---
-Si hay algo en común que muchos programadores tenemos es el gusto por el café. Y basándome en lo visto estos últimos años trabajando en el desarrollo de software, todas las oficinas tienen al menos una máquina de café (y digo al menos una porque en **Buk** tenemos máquina de espreso, prensa francesa, para café en cápsulas y un largo etcétera) y muchos tarritos de café de grano entero o molido. Si prefieres el instantáneo, hay en polvo o liofilizado, en canisters de lata y de vidrio.
+Si hay algo en común que muchos programadores tenemos es el gusto por el café. Y basándome en lo visto estos últimos años trabajando en el desarrollo de software, todas las oficinas tienen al menos una máquina de café (y digo sal menos una porque en **Buk** tenemos máquina de espreso, prensa francesa, para café en cápsulas y un largo etcétera) y muchos tarritos de café de grano entero o molido. Si prefieres el instantáneo, hay en polvo o liofilizado, en canisters de lata y de vidrio.
 
-En **Buk** tenemos un canal de Slack llamado `#coffeetime`, donde hablamos de cafeteras, tipos de café y vivencias dolorosas como cuando se quiebra tu cafetera favorita. 
+En **Buk** tenemos un canal de Slack llamado `#coffeetime`, donde hablamos de cafeteras, tipos de café y vivencias dolorosas como cuando se quiebra tu cafetera favorita.
 
 Pero no pasa sólo en tecnología: en cada oficina del mundo el café en cualquiera de sus formas está con nosotros (y quizás contigo mientras lees esto).
 
 ## El ritual de lo habitual
 
-Más allá de la experiencia sensorial de un café a primera hora de la mañana, tener la costumbre de partir el día con una tacita, para mí es la señal de que es momento de abrir **VS Code** muy bien acompañados. **La relación entre el café y la computación es más que explícita**. El ejemplo más común: el logo del lenguaje *Java* es una taza de esta bebida. 
+Más allá de la experiencia sensorial de un café a primera hora de la mañana, tener la costumbre de partir el día con una tacita, para mí es la señal de que es momento de abrir **VS Code** muy bien acompañados. **La relación entre el café y la computación es más que explícita**. El ejemplo más común: el logo del lenguaje *Java* es una taza de esta bebida.
 
 ## Programar es el arte de organizar complejidad
 
-Así dice una de frase que tenemos plasmada en un muro de **Buk**, y ninguna tarea compleja se puede hacer bien sin concentración. 
+Así dice una de frase que tenemos plasmada en un muro de **Buk**, y ninguna tarea compleja se puede hacer bien sin concentración.
 
 Cuando leí el libro [**Enfócate**](https://www.buscalibre.cl/libro-enfocate-cal-newport-paidos/9789584256034/p/48078177?gclid=Cj0KCQiAuP-OBhDqARIsAD4XHpe-yqpysv6w6MTc0kJtwKiD7lcQa9z079ylw_3xIY5pEOdJB_7NA3UaAjatEALw_wcB#){:target="_blank" rel="noopener"} de **Carl Newport** la premisa fue seductora: tener la habilidad de concentrarse es clave en un mundo lleno de distracciones. ~~El mismísimo~~ Albert Einstein dijo: *"It's not that I'm so smart, it's just that I stay with problems longer"*.
 
@@ -34,12 +34,12 @@ Del libro destaco varias medidas que podemos poner en práctica para aprender a 
 
 - **Arma un espacio libre de distracciones**
 
-Con el teletrabajo es difícil tener un espacio silencioso, con una temperatura agradable y sin imprevistos, pero puedes ayudarte con audífonos de cancelación de ruido, teniendo un escritorio *sólo* con lo que necesitas para trabajar y con ventanas de tiempo definidas. 
+Con el teletrabajo es difícil tener un espacio silencioso, con una temperatura agradable y sin imprevistos, pero puedes ayudarte con audífonos de cancelación de ruido, teniendo un escritorio *sólo* con lo que necesitas para trabajar y con ventanas de tiempo definidas.
 Ejemplo: de 09:00 a 12:00 concéntrate en resolver algo, y *posterga las interrupciones* y no tu responsabilidad.
 
 - **Mitiga las interrupciones**
 
-Hay interrupciones inevitables: ir al baño, hidratarse o atender una emergencia. Pero otras se pueden controlar: en vez de pararte a *cada rato* a *preparar **café***, lleva un termo a tu mesa, ten agua a mano y silencia las notificaciones de redes sociales. Mientras menos interrupciones tengas, más incentivarás la salud de tu concentración. 
+Hay interrupciones inevitables: ir al baño, hidratarse o atender una emergencia. Pero otras se pueden controlar: en vez de pararte a *cada rato* a *preparar **café***, lleva un termo a tu mesa, ten agua a mano y silencia las notificaciones de redes sociales. Mientras menos interrupciones tengas, más incentivarás la salud de tu concentración.
 
 - **Informa que estás ocupado**
 

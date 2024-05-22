@@ -49,6 +49,7 @@ Los alias también pueden ser agregados por comandos de consola, de la siguiente
 ```sh
 git config --global alias.ch checkout
 ```
+
 Donde el tag **- - global** es para definir que configuración queremos modificar, seguido de la **seccion.clave** en este caso **alias.ch** y su valor **checkout**
 
 Con esto podremos utilizar el comando `git ch rama` como si fuera `git checkout rama`
@@ -78,7 +79,6 @@ Un rebase interactivo de N commits atrás, útil para realizar modificaciones a 
 `git rbc --> rebase --continue`
 
 - De la mano con el rebase interactivo, a veces tenemos conflictos al aplicar un rebase, al solucionar estos conflictos, debemos darle un continue al comando de rebase y solo para ahorrar un par de segundos, tengo un alias que lo hace más fácil.
-
 
 En internet puedes encontrar comandos hechos para cosas más complejas, como por ejemplo: Ver los últimos commits ordenados por fecha.
 `branches = branch --sort=-committerdate --format='%(HEAD)%(color:yellow)%(refname:short) | %(color:bold green)%(committerdate:relative) | %(color:blue)%(subject)%(color:reset)' --color=always`

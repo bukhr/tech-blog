@@ -73,6 +73,7 @@ Si las usarás solo en tu post, déjalas en: \
 `/assets/images/[nombre-del-post]`
 
 Ejemplo:
+
 ```
 assets/images/2021-03-17-manteniendo-la-historia-ordenada/image1.png
 ```
@@ -82,20 +83,22 @@ Para añadir imágenes a tu post puedes agregar una variable en el [Front Matter
 ```
 images_path: /assets/images/2021-03-17-manteniendo-la-historia-ordenada
 ```
+
 Luego la puedes usar en tu post de esta forma:
+
 ```
 ![La historia, desordenada]({{page.images_path}}/image1.png)
 ```
 
-
 ## Convenciones
-  - [Convenciones de git](docs/git-conventions.md)
+
+- [Convenciones de git](docs/git-conventions.md)
 
 ## Usando Jekyll
 
 ### Documentación
 
-https://jekyllrb.com/docs/home
+<https://jekyllrb.com/docs/home>
 
 ### Code Highlighting
 

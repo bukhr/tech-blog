@@ -26,7 +26,7 @@ El camino que deberás seguir consiste en 3 simples etapas que nos permitirán c
 
 ### Entrevista Personas
 
-Luego de haberte contactado y agendado, tendrás la primera entrevista con el/la mismo/a Recruiter qué te contactó. 🙌. La entrevista siempre comienza con un poco de conversación *informal* para entrar en confianza: hablar del fin de semana, hobbies, intereses, etc. La idea es que ambos nos relajemos, ya que no es un interrogatorio. Luego, te pediremos que nos cuentes sobre tu motivación para entrar a Buk (probablemente sea porque es el lugar de trabajo más feliz 😎)  y sobre la experiencia que has tenido (cuánto tiempo llevas desarrollando, qué tecnologías manejas, etc). 
+Luego de haberte contactado y agendado, tendrás la primera entrevista con el/la mismo/a Recruiter qué te contactó. 🙌. La entrevista siempre comienza con un poco de conversación *informal* para entrar en confianza: hablar del fin de semana, hobbies, intereses, etc. La idea es que ambos nos relajemos, ya que no es un interrogatorio. Luego, te pediremos que nos cuentes sobre tu motivación para entrar a Buk (probablemente sea porque es el lugar de trabajo más feliz 😎)  y sobre la experiencia que has tenido (cuánto tiempo llevas desarrollando, qué tecnologías manejas, etc).
 
 ![Entrevista personas]({{page.images_path}}/entrevista.gif)
 

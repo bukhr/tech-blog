@@ -44,7 +44,6 @@ O sea se pueden declarar plantillas como esta:
 {% endfor %}{% endraw %}
 ```
 
-
 ¡La creatividad del usuario es el límite 🤯!
 
 ## Usando Liquid programáticamente
