@@ -8,7 +8,6 @@ author: Javier Vergara
 tags: confianza desarrollo
 date: 2024-05-16 16:28 +0100
 ---
-<img width="160" alt="image" src="https://github.com/bukhr/tech-blog/assets/933690/602c6d82-c0d4-462f-8865-d04e2a0d845a">
 Quizás el título huele a _clickbait_, pero espero poder entregarte un consejo que sí te ayude en tu carrera como ingeniero de software.
 
 No sé si te pasa como a mí, que estoy un poco aburrido de tanto consejo _esotérico_ pululando por ahí: rutinas avaladas por neurólogos sobre cuál es la hora óptima de dormir o despertar, millonarios aconsejando trabajar 12 horas por 7 días a la semana, monstruosos toolsets de herramientas para tomar notas y la manera correcta de organizarlas, u otro framework “agile” de moda. 
