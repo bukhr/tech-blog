@@ -3,7 +3,7 @@ layout: post
 title: Mob programming remoto en Buk
 subtitle: Un pair programming pero ¡con esteroides!
 author: Cristofer Robles | Meraioth Ulloa
-tags: mob programming
+tags: [mob programming]
 date: 2022-06-13 11:33 -0300
 images_path: "/assets/images/2022-06-13-mob-programming-en-buk"
 background: "/assets/images/2022-06-13-mob-programming-en-buk/portada.jpg"
