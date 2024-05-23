@@ -87,6 +87,18 @@ Luego la puedes usar en tu post de esta forma:
 ![La historia, desordenada]({{page.images_path}}/image1.png)
 ```
 
+# Tags
+
+Hay 2 formas de poner las etiquetas:
+1. Separados por espacios, sin corchetes y sin comas:
+    ```
+      tags: buk programación API
+    ```
+2. Con corchetes y separados por comas:
+    ```
+      tags: [buk, programación, API]
+    ```
+**Importante:** cuando se quiere poner un tag cuyo nombre tiene espacios (por ejemplo "software engineering") se debe usar la segunda forma
 
 ## Convenciones
   - [Convenciones de git](docs/git-conventions.md)

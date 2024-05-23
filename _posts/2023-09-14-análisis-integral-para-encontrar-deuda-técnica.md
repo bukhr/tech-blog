@@ -5,7 +5,7 @@ subtitle: Tenemos tiempo para resolver deuda técnica, ¿qué resolvemos? ¿Cóm
   qué es lo relevante? Que los datos hablen por si solos.
 author: Meraioth Ulloa
 images_path: "/assets/images/2023-09-14-analisis-deuda-tecnica"
-tags: deuda tecnica, sonarcloud, sentry, codemaat
+tags: [deuda técnica, sonarcloud, sentry, codemaat]
 background: "/assets/images/2023-09-14-analisis-deuda-tecnica/portada.jpeg"
 date: 2023-09-14 23:56 -0300
 ---

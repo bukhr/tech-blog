@@ -5,7 +5,7 @@ subtitle: Internet nos provee de un sinfín de herramientas para contribuir a la
   de un equipo a distancia.
 images_path: "/assets/images/2022-08-19-herramientas-para-un-lugar-de-teletrabajo-mas-feliz"
 author: Catalina Pimentel
-tags: buk, teletrabajo, facilitadores, herramientas
+tags: buk teletrabajo facilitadores herramientas
 date: 2022-08-19 10:30 -0400
 background: "/assets/images/2022-08-19-herramientas-para-un-lugar-de-teletrabajo-mas-feliz/bg.jpg"
 image: "/assets/images/2022-08-19-herramientas-para-un-lugar-de-teletrabajo-mas-feliz/thumbnail.jpg"
