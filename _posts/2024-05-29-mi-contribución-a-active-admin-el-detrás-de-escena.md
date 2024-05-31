@@ -22,7 +22,7 @@ En Buk existe un área llamada SAC (servicio al cliente), quienes son los primer
 
 Por otro lado, como vimos en el artículo "*[Superhéroes contra el maléfico Bug](http://localhost:4000/2022/07/20/superheros-contra-bugs.html)*", en Buk tenemos superhéroes; cargos rotativos que se dedican exclusivamente a resolver incidencias de los clientes cuando SAC no puede hacerlo.
 
-También es importante saber cómo es la vista de administración de un recurso en Active Admin. En la siguiente imagen se ve una; a la izquiera está la tabla con los registros y a la derecha sus filtros.
+También es importante saber cómo es la vista de administración de un recurso en Active Admin. En la siguiente imagen se ve una; a la izquierda está la tabla con los registros y a la derecha sus filtros.
 
 ![Tabla y filtros de un recurso en Active Admin]({{page.images_path}}/active_admin.png)
 
