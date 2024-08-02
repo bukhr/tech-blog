@@ -12,7 +12,9 @@ En el vertiginoso mundo del desarrollo de aplicaciones, cada idea es un destello
 ![Low-code y No-code ]({{page.images_path}}/low-code-no-code.png)
 ## Empecemos, ¿qué c#$%!s son _low-code_ y _no-code_?
 
-Estos términos hacen referencia a herramientas con un entorno visual muy amigable y fácil de usar, diseñado para desarrollar y desplegar aplicaciones sin necesidad de conocimientos profundos en programación. El "low-code" implica que aunque se puede añadir código si es necesario, la mayoría de las veces no es esencial. Por otro lado, el "no-code" se centra en la creación de aplicaciones sin escribir una sola línea de código. En esencia, ambos enfoques están diseñados para que puedas tener tu aplicación funcional con solo unos cuantos clics, facilitando enormemente el proceso de materializar tu idea en un producto real y listo para el uso.
+Ambos enfoques están diseñados para que puedas tener tu aplicación funcional con solo unos cuantos clics en un entorno visual amigable, facilitando enormemente el proceso de materializar tu idea en un producto real y listo para el uso.
+No-code se centra en la creación de aplicación en donde no escribes ninguna línea de código, solo configuras. En low-code, hay espacio para que puedas escribir partes del código solo si es realmente necesario.
+
 
 ### Ventajas de _low-code_ y _no-code_
 
