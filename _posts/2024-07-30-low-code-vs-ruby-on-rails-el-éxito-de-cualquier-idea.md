@@ -22,19 +22,18 @@ No-code se centra en la creación de aplicación en donde no escribes ninguna l�
 
 #### Ventajas de low-code y no-code
 
-* **Rapidez de Desarrollo:** Agilidad en la creación de aplicaciones en comparación con métodos tradicionales.
-* **Facilidad de Uso:** Interfaz intuitiva, accesible para personas con o sin conocimientos técnicos.
-* **Eficiencia y Costo:** Reduce el tiempo de desarrollo y, en muchos casos, los costos asociados.
-* **Inclusión y Colaboración:** Permite a una variedad de perfiles participar en la creación de aplicaciones.
+* **Rapidez de desarrollo:** Agilidad en la creación de aplicaciones en comparación con métodos tradicionales. No se necesita (generalmente) instalar un software en la computadora, instalar dependencias, definir arquitectura de software ni crear conexiones de bases de datos para empezar a materializar la idea
+* **Facilidad de uso:** Interfaz intuitiva, accesible para personas con o sin conocimientos técnicos, cuentan con herramientas visuales que permiten una comprensión de cómo incluir opciones en un lienzo para el diseño, plantillas para no partir de ceros si se desea y mensajes de ayuda con sugerencias para simplificar el trabajo.
+* **Eficiencia y costo:** Reduce el tiempo de desarrollo y, en muchos casos, los costos asociados. Al ser de una construcción que podría inferirse "simple" ya que comparado a la programación una aplicación, no requieres un programador experimentado para la elaboración.
+* **Inclusión y colaboración:** Permite a una variedad de perfiles participar en la creación de aplicaciones, o mejor dicho, personas que generalmente están alejadas del ámbito de la programación, ahora pueden programar aplicaciones, democratizando el desarrollo de software, permitiendo que equipos multidisciplinarios puedan trabajar de forma más eficiente.
 
 #### Desventajas low-code y no-code
 
-* **Limitación en la Complejidad:** Puede tener dificultades con proyectos altamente complejos y altamente personalizados.
-* **Escalabilidad Limitada:** Para aplicaciones que necesitan escalabilidad a gran escala, puede enfrentar desafíos.
-* **Dependencia de Costo:** Puede volverse costoso debido a licencias y tarifas asociadas con el uso de la herramienta.
-* **Limitaciones en la Personalización:** Restricciones en la adaptación y personalización avanzada debido a componentes predefinidos.
-* **Complejidad Limitada:** No es adecuado para proyectos complejos o con funcionalidades altamente personalizadas.
-* **Dependencia de Plataforma:** Estás atado a las características y actualizaciones de la plataforma específica utilizada.
+* **Limitación en la complejidad:** puede tener dificultades con proyectos altamente complejos y altamente personalizados. Cuando la aplicación requiere operaciones donde se considera una gran interacción entre módulos o se requiere una funcionalidad específica, resulta complejo que la herramienta logre solventar las interacciones que debe soportar la aplicación que se desarrolla.
+* **Escalabilidad limitada:** cuando se trata de aplicaciones que necesitan crecer y manejar grandes volúmenes de usuarios o datos, las limitaciones se vuelven evidentes. A menudo carecen de la flexibilidad necesaria para ajustar y optimizar el rendimiento de la aplicación a medida que aumenta la demanda.
+* **Dependencia de costo:** aunque previamente se indica que reduces costos en desarrollo, ahora debe considerarse el uso de licencias y tarifas asociadas con el uso de la herramienta.
+* **Limitaciones en la personalización:** restricciones en la adaptación y personalización avanzada debido a componentes predefinidos. Cosa que generalmente no ocurre al desarrollar una aplicación de ceros, las especificaciones y requerimientos pueden ser mucho más ajustadas a una necesidad particular
+* **Dependencia de plataforma:** las aplicaciones quedan intrínsecamente ligadas a las características, limitaciones y actualizaciones de la plataforma en cuestión. Esto significa que cualquier cambio, actualización o problema con la plataforma puede afectar directamente el funcionamiento de la misma.
 
 #### Algunas empresas "casos de éxito"
 
