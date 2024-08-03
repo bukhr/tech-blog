@@ -35,7 +35,7 @@ No-code se centra en la creación de aplicación en donde no escribes ninguna l�
 * **Limitaciones en la personalización:** restricciones en la adaptación y personalización avanzada debido a componentes predefinidos. Cosa que generalmente no ocurre al desarrollar una aplicación de ceros, las especificaciones y requerimientos pueden ser mucho más ajustadas a una necesidad particular
 * **Dependencia de plataforma:** las aplicaciones quedan intrínsecamente ligadas a las características, limitaciones y actualizaciones de la plataforma en cuestión. Esto significa que cualquier cambio, actualización o problema con la plataforma puede afectar directamente el funcionamiento de la misma.
 
-#### Algunas empresas "casos de éxito"
+#### Algunas empresas "casos de éxito" con low-code y no-code
 
 * **[Plato](https://www.platohq.com/):** Utilizando [Bubble](https://bubble.io/), Plato creó un sistema de mentoría para ingenieros que les permitió escalar rápidamente y ser aceptados en YCombinator.
 * **[Dividend Finance](https://www.dividendfinance.com/)**: Esta empresa de finanzas renovables también hizo uso de [Bubble](https://bubble.io/) para simplificar el proceso de solicitud de préstamos solares y mejorar la experiencia del usuario. Dividend Finance ha procesado más de mil millones de dólares en préstamos y ha sido reconocida con varios premios en el sector financiero.
@@ -44,18 +44,19 @@ No-code se centra en la creación de aplicación en donde no escribes ninguna l�
 
 ### El imbatible: Ruby On Rails
 
-Es un marco de desarrollo de aplicaciones web de código abierto. Se centra en la simplicidad y la productividad, permitiendo a los desarrolladores crear aplicaciones web robustas y escalables de manera eficiente. Su principal característica: desarrollar aplicaciones de manera rápida ofreciendo una infraestructura completa de una aplicación web siguiendo la arquitectura Modelo-Vista-Controlador (MVC).
+Ruby on Rails (Rails) es un marco de desarrollo de aplicaciones web de código abierto que se enfoca en la simplicidad y la productividad, permitiendo a los desarrolladores crear aplicaciones web robustas y escalables de manera eficiente. Creado por David Heinemeier Hansson (DHH), Rails está diseñado para hacer el desarrollo web más agradable y accesible, implementando principios como "Convención sobre Configuración" (**Convention over Configuration**), "No te Repitas" (**Don't Repeat Yourself - DRY**), "**Fat Models, Skinny Controllers**" y el concepto de **Omakase**, donde los desarrolladores confían en las decisiones predeterminadas del framework para optimizar el flujo de trabajo. Estas características y principios permiten un desarrollo rápido y eficiente, ofreciendo una infraestructura completa para construir aplicaciones web.
 
 ![Rails Framework]({{page.images_path}}/rails-framework.png)
 
-
 #### Ventajas de Ruby on Rails
 
-* **Productividad Elevada:** Rails enfoca en la simplicidad y productividad, permitiendo a los desarrolladores crear aplicaciones web de manera rápida y eficiente. La convención sobre configuración reduce la necesidad de escribir código repetitivo.
+* **Productividad elevada:** Rails enfoca en la simplicidad y productividad, permitiendo a los desarrolladores crear aplicaciones web de manera rápida y eficiente. La convención sobre configuración reduce la necesidad de escribir código repetitivo.
 
-* **Amplia Comunidad y Ecosistema:** Cuenta con una comunidad activa y una gran cantidad de bibliotecas y gemas que facilitan el desarrollo y amplían las funcionalidades de la aplicación. Entre ellas se destaca la autenticación de usuarios, gestión de permisos y envío de correos .
+* **Amplia comunidad y ecosistema:** cuenta con una comunidad activa y una gran cantidad de bibliotecas y gemas que facilitan el desarrollo y amplían las funcionalidades de la aplicación. Entre ellas se destaca la autenticación de usuarios, gestión de permisos y envío de correos .
 
-* **Escalabilidad:** Es altamente escalable, permitiendo que las aplicaciones crezcan en complejidad y demanda de manera eficiente.
+* **Escalabilidad:** Ruby on Rails es conocido por su capacidad de escalar eficientemente, permitiendo que las aplicaciones crezcan en complejidad y demanda sin perder rendimiento. Su arquitectura está diseñada para soportar tanto aplicaciones pequeñas como grandes, facilitando la gestión de un aumento en el número de usuarios y en la carga de trabajo. Rails ofrece herramientas y prácticas que ayudan a optimizar el rendimiento y a mantener la integridad de la aplicación a medida que escala.
+
+Aplicaciones de gran escala como **GitHub** y **Basecamp** son [ejemplos](#algunas-empresas-casos-de-éxito-con-ruby-on-rails) de cómo Rails maneja grandes volúmenes de tráfico y datos. **GitHub**, con millones de usuarios y repositorios, y **Basecamp**, con numerosos clientes y proyectos, demuestran la capacidad de Rails para adaptarse y ofrecer un rendimiento sólido a medida que la demanda crece.
 
 * **Modularidad y Reutilización de Código:** Facilita la organización del código en módulos, lo que promueve la reutilización y mantenibilidad del mismo.
 
@@ -69,7 +70,7 @@ Es un marco de desarrollo de aplicaciones web de código abierto. Se centra en l
 
 * **Falta de una Empresa Específica:** No cuenta con una empresa específica que respalde el desarrollo y la evolución de Rails, como por ejemplo [React](https://react.dev/), que está respaldado por Meta (antes Facebook), lo que puede plantear preguntas sobre el mantenimiento y el soporte a largo plazo. Sin embargo, la comunidad activa ha asumido este papel en gran medida.
 
-#### Algunas empresas "casos de éxito"
+#### Algunas empresas "casos de éxito" con Ruby on Rails
 
 * **[Airbnb](https://www.airbnb.com/)**: Esta plataforma de hospedaje ha aprovechado Rails para su desarrollo, lo que les permitió escalar rápidamente y agregar nuevas funcionalidades a medida que crecían. La capacidad de Rails para facilitar un desarrollo rápido y su escalabilidad han sido claves para su éxito​​.
 
