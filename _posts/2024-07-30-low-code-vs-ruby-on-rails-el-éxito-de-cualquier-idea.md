@@ -56,7 +56,7 @@ Ruby on Rails (Rails) es un marco de desarrollo de aplicaciones web de código a
 
 * **Escalabilidad:** Ruby on Rails es conocido por su capacidad de escalar eficientemente, permitiendo que las aplicaciones crezcan en complejidad y demanda sin perder rendimiento. Su arquitectura está diseñada para soportar tanto aplicaciones pequeñas como grandes, facilitando la gestión de un aumento en el número de usuarios y en la carga de trabajo. Rails ofrece herramientas y prácticas que ayudan a optimizar el rendimiento y a mantener la integridad de la aplicación a medida que escala.
 
-Aplicaciones de gran escala como **GitHub** y **Basecamp** son [ejemplos](#algunas-empresas-casos-de-éxito-con-ruby-on-rails) de cómo Rails maneja grandes volúmenes de tráfico y datos. **GitHub**, con millones de usuarios y repositorios, y **Basecamp**, con numerosos clientes y proyectos, demuestran la capacidad de Rails para adaptarse y ofrecer un rendimiento sólido a medida que la demanda crece.
+    Aplicaciones de gran escala como **GitHub** y **Basecamp** son [ejemplos](#algunas-empresas-casos-de-éxito-con-ruby-on-rails) de cómo Rails maneja grandes volúmenes de tráfico y datos. **GitHub**, con millones de usuarios y repositorios, y **Basecamp**, con numerosos clientes y proyectos, demuestran la capacidad de Rails para adaptarse y ofrecer un rendimiento sólido a medida que la demanda crece.
 
 * **Modularidad y Reutilización de Código:** Facilita la organización del código en módulos, lo que promueve la reutilización y mantenibilidad del mismo.
 
@@ -64,11 +64,11 @@ Aplicaciones de gran escala como **GitHub** y **Basecamp** son [ejemplos](#algun
 
 #### Desventajas de Ruby on Rails
 
-* **Optimización de Rendimiento:** Aunque es escalable, la optimización del rendimiento en aplicaciones muy grandes puede requerir un conocimiento avanzado de Rails y su arquitectura.
+* **Optimización de rendimiento:** Aunque es escalable, la optimización del rendimiento en aplicaciones muy grandes puede requerir un conocimiento avanzado de Rails y su arquitectura.
 
-* **Configuración Detallada:** Aunque se basa en convenciones, en proyectos altamente personalizados, puede requerir una configuración detallada, lo que aumenta el tiempo de inicio.
+* **Configuración detallada:** Aunque se basa en convenciones, en proyectos altamente personalizados, puede requerir una configuración detallada, lo que aumenta el tiempo de inicio.
 
-* **Falta de una Empresa Específica:** No cuenta con una empresa específica que respalde el desarrollo y la evolución de Rails, como por ejemplo [React](https://react.dev/), que está respaldado por Meta (antes Facebook), lo que puede plantear preguntas sobre el mantenimiento y el soporte a largo plazo. Sin embargo, la comunidad activa ha asumido este papel en gran medida.
+* **Falta de una empresa específica:** No cuenta con una empresa específica que respalde el desarrollo y la evolución de Rails, como por ejemplo [React](https://react.dev/), que está respaldado por Meta (antes Facebook), lo que puede plantear preguntas sobre el mantenimiento y el soporte a largo plazo. Sin embargo, la comunidad activa ha asumido este papel en gran medida.
 
 #### Algunas empresas "casos de éxito" con Ruby on Rails
 
@@ -80,7 +80,7 @@ Aplicaciones de gran escala como **GitHub** y **Basecamp** son [ejemplos](#algun
 
 * **[Basecamp](https://basecamp.com/)**: Desarrollada por el creador de Rails, David Heinemeier Hansson (DHH), Basecamp es una herramienta de gestión de proyectos utilizada por millones de personas. Rails sigue siendo el núcleo de esta aplicación, demostrando su durabilidad y eficacia para aplicaciones complejas y ampliamente utilizadas​.
 
-* **[Buk](https://www.buk.cl/)** 💙: Utilizando Rails como base su desarrollo, Buk ha aprovechado las ventajas de la convención sobre configuración de Rails. Esto ha permitido su crecimiento con relativa "facilidad" y construir una estructura de aplicación robusta y escalable. Rails ha sido fundamental para agilizar nuestro proceso de desarrollo y mantener la calidad a medida que expande sus funcionalidades.
+* **[Buk](https://www.buk.cl/)** 💙: Utilizando Rails como base de su desarrollo, Buk ha aprovechado las ventajas de la convención sobre configuración de Rails. Esto ha permitido su crecimiento con relativa "facilidad" y construir una estructura de aplicación robusta y escalable. Rails ha sido fundamental para agilizar nuestro proceso de desarrollo y mantener la calidad a medida que expande sus funcionalidades.
 
 ### ¿Cómo Rails competiría con herramientas low-code y no-code?
 
