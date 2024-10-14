@@ -1,12 +1,16 @@
 ---
 layout: post
 title: Cómo Rails genera los URLs y como sobreescribirlos
-subtitle: Un pequeño recorrido por el proceso de construcción de rutas relativas y URLs
-  en Rails
+subtitle: Un pequeño recorrido por el proceso de construcción de rutas relativas y
+  URLs en Rails
 author: Diego Echeverría G.
-tags: [rails, REST, url, actionpack]
+tags:
+- rails
+- REST
+- url
+- actionpack
 date: 2024-10-11 15:26 -0300
-images_path: /assets/images/2024-10-11-como-rails-genera-los-urls-y-como-sobreescribirlos
+images_path: "/assets/images/2024-10-11-como-rails-genera-los-urls-y-como-sobreescribirlos"
 background: "/assets/images/2024-10-11-como-rails-genera-los-urls-y-como-sobreescribirlos/ruby-on-rails-logo.svg.png"
 ---
 ¿Te has preguntado alguna vez como es que Rails hace para transformar todos los métodos que terminan en `url` o `path` en URLs legibles para nuestro navegador? Pues si lo has hecho, has llegado al lugar correcto, en este post te explicaré cómo es que Rails genera de manera dinámica estos métodos y como sobreescribir la construcción de URLs de manera efectiva en tu aplicación.
