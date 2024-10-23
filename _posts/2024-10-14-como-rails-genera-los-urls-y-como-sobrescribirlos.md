@@ -9,7 +9,10 @@ tags:
 - REST
 - url
 - actionpack
-date: 2024-10-11 15:26 -0300
+- ActionDispatch
+- routing
+- rails routing
+date: 2024-10-22 10:00 -0300
 images_path: "/assets/images/2024-10-11-como-rails-genera-los-urls-y-como-sobrescribirlos"
 background: "/assets/images/2024-10-11-como-rails-genera-los-urls-y-como-sobrescribirlos/ruby-on-rails-logo.svg.png"
 ---
