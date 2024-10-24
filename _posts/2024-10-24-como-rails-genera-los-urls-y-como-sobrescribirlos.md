@@ -13,8 +13,8 @@ tags:
 - routing
 - rails routing
 date: 2024-10-24 13:00 -0300
-images_path: "/assets/images/2024-10-11-como-rails-genera-los-urls-y-como-sobrescribirlos"
-background: "/assets/images/2024-10-11-como-rails-genera-los-urls-y-como-sobrescribirlos/ruby-on-rails-logo.svg.png"
+images_path: "/assets/images/2024-10-24-como-rails-genera-los-urls-y-como-sobrescribirlos"
+background: "/assets/images/2024-10-24-como-rails-genera-los-urls-y-como-sobrescribirlos/ruby-on-rails-logo.svg.png"
 ---
 ¿Te has preguntado alguna vez como es que Rails hace para transformar todos los métodos que terminan en `url` o `path` en URLs legibles para nuestro navegador? Pues si lo has hecho, has llegado al lugar correcto, en este post te explicaré cómo Rails genera de manera dinámica estos métodos y como sobrescribir la construcción de URLs de manera efectiva en tu aplicación.
 
