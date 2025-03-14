@@ -1,0 +1,76 @@
+#!/usr/bin/env ruby
+
+require 'date'
+require 'fileutils'
+
+def slugify(text)
+  text.downcase
+      .gsub(/[^a-z0-9\s-]/, '')
+      .gsub(/\s+/, '-')
+end
+
+def normalize_title(title)
+  title.gsub(/\s+/, ' ')  # normalizar espacios
+       .strip
+end
+
+def validate_title(title)
+  unless title.downcase.include?('entrevista con') && title.include?('-')
+    puts "Error: El título debe tener el formato 'entrevista con [nombre] - [rol]'"
+    puts "Ejemplo: entrevista con Juan Pérez - Software Engineer"
+    puts "\nTítulo recibido: #{title}"
+    exit 1
+  end
+end
+
+def create_interview(title)
+  # Normalizar y validar el título
+  title = normalize_title(title)
+  validate_title(title)
+
+  # Extraer nombre y rol del título
+  if title =~ /entrevista con (.*?)\s*-\s*(.*)/i
+    name = $1.strip
+    role = $2.strip
+  else
+    puts "Error: No se pudo extraer el nombre y rol del título."
+    puts "Formato esperado: 'entrevista con [nombre] - [rol]'"
+    puts "Ejemplo: entrevista con Juan Pérez - Software Engineer"
+    exit 1
+  end
+
+  date = Time.now.strftime('%Y-%m-%d')
+  image_path = slugify(name)
+  
+  # Crear directorio para imágenes
+  FileUtils.mkdir_p("assets/img/interviews/#{image_path}")
+  
+  # Leer el template
+  template = File.read('_templates/interview.md')
+  
+  # Reemplazar variables en el template
+  content = template
+    .gsub('%{title}', "Entrevista con #{name}")
+    .gsub('%{subtitle}', role)
+    .gsub('%{author}', name)
+    .gsub('%{date}', Time.now.strftime('%Y-%m-%d %H:%M:%S %z'))
+    .gsub('%{image_path}', image_path)
+  
+  # Crear el archivo draft
+  filename = "_drafts/#{date}-entrevista-#{slugify(name)}.md"
+  File.write(filename, content)
+  
+  puts "✓ Creado archivo: #{filename}"
+  puts "✓ Creado directorio de imágenes: assets/img/interviews/#{image_path}"
+  puts "\nRecuerda:"
+  puts "1. Agregar la foto del entrevistado como 'background.jpg' en el directorio de imágenes"
+  puts "2. Personalizar las preguntas según el área de expertise del entrevistado"
+  puts "3. Cuando esté listo, publicar usando: bin/jekyll publish #{filename}"
+end
+
+if ARGV.empty?
+  puts "Uso: bin/create_interview \"entrevista con [nombre] - [rol]\""
+  exit 1
+end
+
+create_interview(ARGV.join(' '))

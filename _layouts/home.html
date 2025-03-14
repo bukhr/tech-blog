@@ -28,8 +28,10 @@ layout: default
 
         {{ content }}
 
-        <!-- Home Post List -->
-        {% for post in site.posts limit : 10 %}
+        <!-- Home Post List (excluding interviews) -->
+        {% assign all_posts = site.posts %}
+        {% for post in all_posts limit : 10 %}
+        {% unless post.categories contains 'interview' %}
 
         <article class="post-preview">
           <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
@@ -55,6 +57,7 @@ layout: default
 
         <hr>
 
+        {% endunless %}
         {% endfor %}
 
         {% include tags-list.html %}

@@ -103,11 +103,80 @@ Hay 2 formas de poner las etiquetas:
 ## Convenciones
   - [Convenciones de git](docs/git-conventions.md)
 
+## Cómo agregar una entrevista
+
+Para agregar una nueva entrevista al blog, sigue estos pasos:
+
+1. Crea una nueva entrevista usando:
+
+```sh
+bin/create_interview "entrevista con [nombre del entrevistado] - [rol o especialidad]"
+```
+
+Esto creará:
+- Un archivo draft en `_drafts/YYYY-MM-DD-entrevista-[nombre].md`
+- Un directorio para imágenes en `assets/img/interviews/[nombre]/`
+
+1. Modifica el Front Matter del archivo con la siguiente estructura:
+
+```yaml
+layout: post
+title: "Título de la Entrevista"
+subtitle: "Rol o descripción breve del entrevistado"
+author: "Nombre del Entrevistado"
+date: YYYY-MM-DD HH:MM:SS -0600  # se autogenera, pero puedes editarlo
+background: '/assets/img/interviews/[nombre-entrevistado].jpg'
+categories: interview
+tags: [tag1, tag2, tag3]  # usa tags relevantes como: desarrollo, liderazgo-tech, innovación, etc.
+images_path: /assets/img/interviews/[nombre-entrevistado]
+```
+
+1. Estructura el contenido de la entrevista siguiendo este formato:
+
+```markdown
+Breve introducción sobre el entrevistado y el contexto de la entrevista (1-2 párrafos)
+
+## [Pregunta 1]?
+
+[Respuesta 1]
+
+## [Pregunta 2]?
+
+[Respuesta 2]
+
+...
+```
+
+1. Agrega las imágenes relacionadas con la entrevista en:
+`/assets/img/interviews/[nombre-entrevistado]/`
+
+1. Cuando la entrevista esté lista, publícala usando:
+
+```sh
+bin/jekyll publish _drafts/entrevista-con-[nombre]-[rol].md
+```
+
+### Recomendaciones para entrevistas
+
+- **Imágenes**: Incluye una foto del entrevistado (con su permiso) y/o imágenes relevantes a los temas discutidos
+- **Estructura**: Mantén un formato pregunta-respuesta claro y consistente
+- **Extensión**: Procura que las respuestas sean concisas y enfocadas
+- **Tags**: Usa tags específicos que ayuden a categorizar el contenido de la entrevista
+- **Background**: Usa una imagen de fondo relacionada con el tema de la entrevista o el área de expertise del entrevistado
+
+### Revisión y publicación
+
+Al igual que con los posts regulares:
+
+1. Asigna un revisor que conozca el tema o área del entrevistado
+2. Asegúrate de que el entrevistado haya revisado y aprobado el contenido final
+3. Solicita la aprobación final en el canal #coord-the-weekly-commit
+
 ## Usando Jekyll
 
 ### Documentación
 
-https://jekyllrb.com/docs/home
+<https://jekyllrb.com/docs/home>
 
 ### Code Highlighting
 
