@@ -1,0 +1,31 @@
+---
+layout: page
+title: Entrevistas
+description: Conversaciones con profesionales del mundo tech
+background: '/assets/img/interviews/interviews-bg.jpg'
+---
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+      {% for post in site.categories.interview %}
+      <article class="post-preview">
+        <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+          <h2 class="post-title">{{ post.title }}</h2>
+          {% if post.subtitle %}
+          <h3 class="post-subtitle">{{ post.subtitle }}</h3>
+          {% endif %}
+        </a>
+        <p class="post-meta">
+          Entrevista con {{ post.author }} 
+          el {% if post.date %}{{ post.date | date: '%B %d, %Y' }}{% endif %}
+        </p>
+        <div class="post-preview-content">
+          {{ post.excerpt }}
+        </div>
+      </article>
+      <hr>
+      {% endfor %}
+    </div>
+  </div>
+</div>
