@@ -1,0 +1,23 @@
+{% if include.page %} 
+  {% assign page = include.page %}
+{% endif %}
+{% if page.author %}
+  {% if page.author contains ' | ' %}
+    {% assign authors = page.author | split: ' | ' %}
+  {% else %}
+    {% assign authors = page.author %}
+  {% endif %}
+  {% for item in authors %}
+    {% assign author = site.autores | where_exp: 'autor', "autor.short_name == item or autor.name == item" | first %}
+    {% if author %}
+      <a href="{{ author.url }}">{{ author.name }}</a>
+    {% else %}
+      {{ item }}
+    {% endif %}
+    {% if forloop.last == false %}
+      |
+    {% endif %}
+  {% endfor %}
+{% else %}
+  {{ site.author }}
+{% endif %}

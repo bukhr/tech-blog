@@ -1,0 +1,124 @@
+---
+layout: default
+---
+
+<!-- Page Header -->
+{% if page.background %}
+  <header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
+{% else %}
+  <header class="masthead">
+{% endif %}
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>{{ page.name }}</h1>
+            {% if page.position %}
+            <span class="subheading">{{ page.position }}</span>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+
+        <h3 class="post-title">Sobre</h3>
+        
+        {{ content }}
+
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            {% if page.twitter_username %}
+            <li class="list-inline-item">
+              <a href="https://twitter.com/{{ page.twitter_username }}">
+                <span class="fa-stack fa-md">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            {% endif %}
+            {% if page.facebook_username %}
+            <li class="list-inline-item">
+              <a href="https://www.facebook.com/{{ page.facebook_username }}">
+                <span class="fa-stack fa-md">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            {% endif %}
+            {% if page.linkedin_username %}
+            <li class="list-inline-item">
+              <a href="https://www.linkedin.com/in/{{ page.linkedin_username }}">
+                <span class="fa-stack fa-md">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            {% endif %}
+            {% if page.github_username %}
+            <li class="list-inline-item">
+              <a href="https://github.com/{{ page.github_username }}">
+                <span class="fa-stack fa-md">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            {% endif %}
+            {% if page.instagram_username %}
+            <li class="list-inline-item">
+              <a href="https://instagram.com/{{ page.instagram_username }}">
+                <span class="fa-stack fa-md">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            {% endif %}
+          </ul>
+        </div>
+
+        {% assign filtered_posts = site.posts | where: 'author', page.short_name %}
+        {% if filtered_posts.size > 0 %}
+          <h3 class="post-title">Artículos</h3>
+
+          <!-- Author Post List (excluding interviews) -->
+          
+          {% for post in filtered_posts limit : 10 %}
+          {% unless post.categories contains 'interview' %}
+  
+          <article class="post-preview">
+            <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+              <h2 class="post-title">{{ post.title }}</h2>
+              {% if post.subtitle %}
+              <h3 class="post-subtitle">{{ post.subtitle }}</h3>
+              {% else %}
+              <h3 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</h3>
+              {% endif %}
+            </a>
+            <p class="post-meta">
+              {% assign month = post.date | date: "%-m" | minus: 1 %}
+              {{ post.date | date: '%-d' }} de {{ site.data.months[month] }} de {{ post.date | date: '%-Y' }}  
+              &middot; {% include read_time.html content=post.content %}
+            </p>
+          </article>
+  
+          <hr>
+  
+          {% endunless %}
+          {% endfor %}
+        {% else %}
+        <hr>
+        <br>
+        {% endif %}
+      </div>
+    </div>
+  </div>

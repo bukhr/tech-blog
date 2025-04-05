@@ -28,11 +28,7 @@ layout: default
       <div class="col-lg-8 col-md-10 mx-auto">
         <p class="post-meta">
           Escrito por
-          {% if page.author %}
-            {{ page.author }}
-          {% else %}
-            {{ site.author }}
-          {% endif %}
+          {% include autor_link.html %}
           el
           {% assign month = page.date | date: "%-m" | minus: 1 %}
           {{ page.date | date: '%-d' }} de {{ site.data.months[month] }} de {{ page.date | date: '%-Y' }} 

@@ -43,11 +43,7 @@ layout: default
             {% endif %}
           </a>
           <p class="post-meta">Por
-            {% if post.author %}
-              {{ post.author }}
-            {% else %}
-              {{ site.author }}
-            {% endif %}
+            {% include autor_link.html page=post %}
             el
             {% assign month = post.date | date: "%-m" | minus: 1 %}
             {{ post.date | date: '%-d' }} de {{ site.data.months[month] }} de {{ post.date | date: '%-Y' }}  
