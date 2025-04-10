@@ -46,7 +46,7 @@ Recuerda rellenar los datos en el inicio del documento, a esta sección Jekyll l
 layout: post
 title: Manteniendo la historia ordenada
 subtitle: Cómo mantener en orden los commits en tu MR (breve descripción para previews)
-image: "/assets/images/img-metadata.png" (imagen para previews, preferiblemente menos de 200px de ancho)
+image: "/assets/images/img-metadata.png" (imagen para previews, con más de 300px de ancho, preferiblemente 1200x630 píxeles)
 author: Andrés Howard
 tags: git
 date: 2021-03-17 11:33 -0300 # se autogenera, pero también lo puedes editar
