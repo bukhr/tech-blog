@@ -26,7 +26,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://buk.engineering" # the base hostname & protocol for your site, e.g. http://example.com
 linkedin_username: company/bukhr
 facebook_username: bukRRHH
-instagram_username: buk_rrhh
+instagram_username: buk_chile
 
 about_us_link: https://www.buk.cl/nosotros?utm_source=blog-eng&utm_medium=link&utm_campaign=outreach
 work_with_us_link: https://info.buk.cl/reclutamiento-buk-devs?utm_source=blog-eng&utm_medium=link&utm_campaign=outreach
