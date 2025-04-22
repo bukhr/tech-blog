@@ -45,7 +45,7 @@ Con el tiempo, saltar entre lenguajes o frameworks se torna más fácil, porque 
 
 ## ¿Podrías describir un proyecto o iniciativa en la que hayas trabajado y que consideres un reflejo de tu crecimiento profesional?
 
-Acredito que en los últimos 7 años aquí en Chile, todos los proyectos e iniciativas en los que participé de alguna forma han contribuido a mi crecimiento profesional. Sin embargo, el trabajo que desarrollé en Globant, liderando un equipo multidisciplinario de casi 30 personas, incluyendo profesionales de UX, DevOps, QA, TAE, Backend y Frontend en un proyecto de software de reclutamiento con IA, fue uno de los más impactantes y en el que más evolucioné como profesional. Allí, no solo crecí como líder, sino también como mentor de diversos profesionales.
+Acredito que en los últimos 7 años aquí en Chile, todos los proyectos e iniciativas en los que participé de alguna forma han contribuido a mi crecimiento profesional. Sin embargo, el trabajo que desarrollé en Globant, que mencioné anteriormente, fue uno de los más impactantes y en el que más evolucioné como profesional. Allí, no solo crecí como líder, sino también como mentor de diversos profesionales, logrando generar un impacto significativo en la carrera de esos colegas y en la mía.
 
 ## ¿Qué consejo le darías a quienes están empezando en el mundo del desarrollo de software para que puedan afrontar los retos de la industria?
 
