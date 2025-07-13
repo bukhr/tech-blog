@@ -1,10 +1,16 @@
 <aside class="tags-list">
   <h4>{{ site.tags_title }}</h4>
   <div class="list">
-    {% assign tags = site.tags | sort %}
-    {% for tag in tags %}
-    <a href="/tags#{{ tag | first | slugify }}">
-      {{ tag[0] | replace:'-', ' ' }} <small class="badge badge-pill badge-info">{{ tag | last | size }}</small>
+    {% capture site_tags %}
+      {% for tag in site.tags %}
+        {{ tag[1].size }}&#x1F;{{ tag | first }}
+        {% unless forloop.last %}&#x1E;{% endunless %}
+      {% endfor %}
+    {% endcapture %}
+    {% assign tags = site_tags | split: '&#x1E;' | sort | reverse %}
+    {% for tag in tags | limit: 15 %}
+    <a href="/tags#{{ tag | split: '&#x1F;' | last | slugify }}">
+      {{ tag | split: '&#x1F;' | last | replace:'-', ' ' | capitalize }}
     </a>
     {% endfor %}
   </div>
