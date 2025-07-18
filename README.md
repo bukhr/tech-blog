@@ -11,6 +11,26 @@ Bienvenido al repositorio oficial del [Buk Tech Blog](https://buk.engineering/).
 - [Flujos de trabajo con IA Generativa](docs/flujos-de-trabajo-con-ia-generativa.md)
 - [Cómo agregar un autor](docs/como-agregar-un-author.md)
 
+## Beneficios de Contribuir
+
+Escribir en el Tech Blog te da la oportunidad de crecer profesionalmente de maneras que la rutina diaria a veces no permite.
+
+### Mejora tus habilidades de comunicación
+
+Explicar temas técnicos complejos de forma sencilla es un gran desafío. Este ejercicio no solo mejora tu escritura, sino también tu comunicación en el día a día, algo clave para el trabajo en equipo, dar mentorías o hablar con personas sin perfil técnico.
+
+### Profundiza tu conocimiento técnico
+
+Dicen que la mejor forma de aprender es enseñar. Para escribir un post, necesitas ordenar tus ideas, investigar y validar lo que sabes. Este proceso refuerza y profundiza tu dominio sobre el tema.
+
+### Construye tu marca personal
+
+Publicar artículos con tu nombre te posiciona como un referente en tu área. Esto aumenta tu visibilidad en la comunidad tech y construye una reputación que puede traerte nuevas oportunidades de trabajo, invitaciones a charlas o colaboraciones en otros proyectos.
+
+### Desarrolla tu pensamiento crítico
+
+Escribir un artículo te obliga a estructurar tus ideas de forma lógica: presentas un problema, exploras soluciones y defiendes un enfoque. Esta habilidad para organizar y presentar información es la misma que usas al planificar y diseñar software.
+
 ## Estructura del repositorio
 
 - `_posts`: Directorio que contiene todos los posts publicados
