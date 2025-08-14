@@ -10,6 +10,7 @@ Este documento describe los flujos de trabajo (*workflows*) disponibles para uti
 - [create-author](#create-author): Crear una página de autor
 - [topic-suggestion](#topic-suggestion): Obtener sugerencias de temas para publicaciones
 - [review](#review): Revisar el contenido existente
+- [review-pr](#review-pr): Revisar un Pull Request
 
 ## Cómo utilizar los workflows
 
@@ -141,3 +142,23 @@ Ejecutar el siguiente comando del workflow:
     ```
 
     **Resultado**: El asistente revisará el archivo especificado y te proporcionará sugerencias de mejora basadas en los criterios de revisión establecidos.
+
+### review-pr
+
+Este workflow te ayuda a revisar un Pull Request en el Buk Tech Blog para asegurar su calidad y cumplimiento con las reglas del blog.
+
+#### Cómo utilizarlo
+
+Ejecutar el siguiente comando del workflow:
+
+- `/review-pr` para ejecutar el workflow en modo chat interactivo.
+
+    **Resultado**: Se iniciará un chat interactivo donde la IA te guiará en el proceso de revisión del Pull Request.
+
+- También puedes especificar el Pull Request que deseas revisar, ejemplo:
+
+    ```prompt
+    /review-pr 222
+    ```
+
+    **Resultado**: El asistente revisará el Pull Request especificado y te proporcionará sugerencias de mejora basadas en los criterios de revisión establecidos.
