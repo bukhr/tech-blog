@@ -332,7 +332,8 @@ header.masthead-without-background {
 }
 
 .header-home {
-  background: #f6f8fe;
+  background: #f6f8fe url('/assets/images/global/banner-fondo.png') center center no-repeat;
+  background-size: cover;
   padding-bottom: 3rem;
   padding-top: 6rem;
   margin-bottom: 1rem;
@@ -365,12 +366,12 @@ header.masthead-without-background {
   }
 }
 
-.header-home-text-container,
-.header-home-image {
+.header-home-text-container {
   grid-column: span 4 / span 4;
+  text-align: left;
 
   @media only screen and (min-width: 1020px) {
-    grid-column: span 6 / span 6;
+    grid-column: 1 / span 7;
   }
 }
 
@@ -379,7 +380,7 @@ header.masthead-without-background {
   font-size: 2rem;
   line-height: 1;
   font-weight: 900;
-  color: var(--color-blue-buk);
+  color: var(--color-white);
 
   @media only screen and (min-width: 1020px) {
     font-size: 4rem;
@@ -387,9 +388,10 @@ header.masthead-without-background {
 }
 
 .header-home-text {
-  font-size: 1.125rem;
+  font-size: 2rem;
   line-height: 1.3;
   padding-top: 1rem;
+  color: var(--color-white);
 }
 
 .footer {
