@@ -1,5 +1,6 @@
 ---
-description: Crear Publicación (Post) con ayuda de la IA Generativa
+name: create-post
+description: Crear Publicación (Post) con ayuda de la IA Generativa. Usar cuando el usuario quiere crear un nuevo post para el blog.
 ---
 
 # Workflow para Crear Publicación (Post)
@@ -59,7 +60,3 @@ Para referencia, los posts actuales se encuentran en la carpeta `_posts`. Alguno
 - Artículos técnicos sobre Ruby on Rails
 - Posts sobre herramientas y tecnologías utilizadas en Buk
 - Entrevistas con miembros del equipo
-
-## Reglas
-
-- Utilice las reglas y documentaciones definidas en el archivo `.windsurf/rules/globalrules.md`

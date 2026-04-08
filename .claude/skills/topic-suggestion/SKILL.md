@@ -1,17 +1,18 @@
 ---
-description: Sugerencia de temas para publicaciones en el blog técnico
+name: topic-suggestion
+description: Sugerencia de temas para publicaciones en el blog técnico. Usar cuando el usuario busca ideas o inspiración sobre qué escribir.
 ---
 
 # Workflow para Sugerencia de Temas
 
 ## Instrucciones
 
-Este workflow está diseñado para generar sugerencias de temas relevantes para el blog técnico de Buk. Sigue estos pasos secuenciales:
+Este skill está diseñado para generar sugerencias de temas relevantes para el blog técnico de Buk. Sigue estos pasos secuenciales:
 
 ### Paso 1: Generación de sugerencias de temas
 
 - Genera una lista numerada de 10 temas técnicos potenciales para publicaciones en el blog, considerando:
-  - Tecnologías utilizadas en Buk (Ruby, Rails, AWS, Terraform, React, Vue, etc.)  
+  - Tecnologías utilizadas en Buk (Ruby, Rails, AWS, Terraform, React, Vue, etc.)
   - Tendencias actuales en desarrollo de software
   - Buenas prácticas de ingeniería
   - Experiencias de implementación o resolución de problemas
@@ -39,6 +40,5 @@ Este workflow está diseñado para generar sugerencias de temas relevantes para 
 
 - Todos los temas deben estar alineados con el perfil técnico del blog
 - Las sugerencias deben ser relevantes para desarrolladores de software
-- El contenido debe seguir las directrices establecidas en `globalrules.md`
 - Los temas deben ser escritos en español, manteniendo términos técnicos en inglés con traducción cuando sea necesario
 - Evitar temas que puedan comprometer información sensible o de seguridad
