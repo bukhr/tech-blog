@@ -1,5 +1,6 @@
 ---
-description: Crear página de Autor con ayuda de la IA Generativa
+name: create-author
+description: Crear página de Autor con ayuda de la IA Generativa. Usar cuando el usuario quiere crear un nuevo autor para el blog.
 ---
 
 # Workflow para crear página de Autor

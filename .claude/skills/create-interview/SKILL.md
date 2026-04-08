@@ -1,5 +1,6 @@
 ---
-description: Crear entrevista con ayuda de la IA Generativa
+name: create-interview
+description: Crear entrevista con ayuda de la IA Generativa. Usar cuando el usuario quiere crear una nueva entrevista para el blog.
 ---
 
 # Workflow para Entrevista
@@ -50,7 +51,6 @@ description: Crear entrevista con ayuda de la IA Generativa
 
 ## Reglas generales
 
-- Seguir siempre las directrices en `.windsurf/rules/globalrules.md`
 - Mantener un tono profesional pero accesible
 - Asegurar que el contenido aporta valor técnico
 - Respetar la privacidad y seguridad de la información

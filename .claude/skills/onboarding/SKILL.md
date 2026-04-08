@@ -1,5 +1,6 @@
 ---
-description: Onboarding guiado para desarrolladores del blog técnico
+name: onboarding
+description: Onboarding guiado para desarrolladores del blog técnico. Usar cuando un usuario nuevo quiere empezar a contribuir al blog o no sabe qué tipo de contenido crear.
 ---
 
 # Workflow de Onboarding para el Blog Técnico
@@ -21,10 +22,10 @@ description: Onboarding guiado para desarrolladores del blog técnico
    ```
 
    - Sugerir 3-5 temas relevantes basados en:
-     - Las reglas definidas en el workflow `.windsurf/workflows/topic-suggestion.md`
+     - Las reglas definidas en el skill `/topic-suggestion`
 
 2. **Creación del archivo**
-   - Utilizar el workflow `/create-post` para generar la estructura base
+   - Utilizar el skill `/create-post` para generar la estructura base
    - Explicar la importancia del Front Matter y sus campos
 
 3. **Estructura del contenido**
@@ -42,7 +43,7 @@ description: Onboarding guiado para desarrolladores del blog técnico
 ## Flujo para Entrevista
 
 1. **Ejecución Guiada**
-   - Utilizar el workflow `/create-interview` para generar la entrevista
+   - Utilizar el skill `/create-interview` para generar la entrevista
    - Explicar al usuario los pasos durante la ejecución
 
 ## Flujo para Página de Autor
@@ -56,7 +57,7 @@ description: Onboarding guiado para desarrolladores del blog técnico
      - Foto (instrucciones para agregarla)
 
 2. **Creación del archivo**
-   - Utilizar el workflow `/create-author` para generar la estructura
+   - Utilizar el skill `/create-author` para generar la estructura
    - Explicar la ubicación y formato del archivo
 
 ## Revisión final (para cualquier tipo de contenido)
@@ -83,7 +84,6 @@ description: Onboarding guiado para desarrolladores del blog técnico
 
 ## Reglas generales
 
-- Seguir siempre las directrices en `.windsurf/rules/globalrules.md`
 - Mantener un tono profesional pero accesible
 - Asegurar que el contenido aporta valor técnico
 - Respetar la privacidad y seguridad de la información

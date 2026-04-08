@@ -1,7 +1,3 @@
----
-trigger: always_on
----
-
 # Reglas Generales
 
 ## Herramientas y tecnologías

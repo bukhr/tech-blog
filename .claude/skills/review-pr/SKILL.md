@@ -1,5 +1,7 @@
 ---
-description: Revisar un Pull Request de forma técnica y detallada
+name: review-pr
+description: Revisar un Pull Request de forma técnica y detallada. Usar cuando el usuario quiere revisar un PR del blog.
+argument-hint: [número-pr]
 ---
 
 # Workflow para Revisar un Pull Request
@@ -7,11 +9,10 @@ description: Revisar un Pull Request de forma técnica y detallada
 ## Fase 1: Preparación y Contexto
 
 1. **Obtener Información del PR**
-   - Solicitar al usuario el número o URL del PR que desea revisar.
    - Visualizar información detallada del PR usando GitHub CLI:
 
      ```bash
-     gh pr view <número-pr> --json title,body,author,state
+     gh pr view $ARGUMENTS --json title,body,author,state
      ```
 
    - Preguntar sobre el contexto y el propósito del PR (nueva funcionalidad, corrección de bugs, mejora, etc.).
@@ -21,7 +22,7 @@ description: Revisar un Pull Request de forma técnica y detallada
    - Guiar en la obtención y prueba del código si es necesario:
 
      ```bash
-     gh pr checkout <número-pr>
+     gh pr checkout $ARGUMENTS
      ```
 
 ## Fase 2: Análisis de Cambios
@@ -30,21 +31,12 @@ description: Revisar un Pull Request de forma técnica y detallada
    - Ver el resumen de cambios con GitHub CLI:
 
      ```bash
-     gh pr diff <número-pr> --color=always
+     gh pr diff $ARGUMENTS --color=always
      ```
 
 2. **Análisis de Código por Archivo**
-   - Para cada archivo modificado, revisar detalladamente:
-
-     ```bash
-     gh pr diff <número-pr> -- ruta/al/archivo
-     ```
-
-   - Si necesitas revisar el historial de cambios:
-
-     ```bash
-     git blame ruta/al/archivo
-     ```
+   - Para cada archivo modificado, revisar detalladamente.
+   - Si necesitas revisar el historial de cambios, usar `git blame`.
 
 ## Fase 3: Criterios de Revisión Técnica
 
@@ -80,10 +72,8 @@ description: Revisar un Pull Request de forma técnica y detallada
    - Añadir comentarios directamente al PR:
 
      ```bash
-     gh pr comment <número-pr> --body "Tu comentario detallado aquí"
+     gh pr comment $ARGUMENTS --body "Tu comentario detallado aquí"
      ```
-
-   - Para comentar en líneas específicas, utilizar la interfaz web de GitHub.
 
 ## Fase 5: Cierre y Decisión
 
@@ -92,22 +82,16 @@ description: Revisar un Pull Request de forma técnica y detallada
 
      ```bash
      # Para aprobar el PR
-     gh pr review <número-pr> --approve --body "Aprobado: [razón]"
+     gh pr review $ARGUMENTS --approve --body "Aprobado: [razón]"
      
      # Para solicitar cambios
-     gh pr review <número-pr> --request-changes --body "Se requieren cambios: [detalles]"
+     gh pr review $ARGUMENTS --request-changes --body "Se requieren cambios: [detalles]"
      
      # Para comentar sin bloquear
-     gh pr review <número-pr> --comment --body "Comentarios: [detalles]"
+     gh pr review $ARGUMENTS --comment --body "Comentarios: [detalles]"
      ```
 
 2. **Seguimiento**
-   - Configurar notificaciones para seguir la actividad del PR:
-
-     ```bash
-     gh pr subscribe <número-pr>
-     ```
-
    - Establecer un plan para verificar las correcciones si se solicitaron cambios.
    - Documentar las lecciones aprendidas para futuras revisiones.
 
@@ -118,7 +102,6 @@ description: Revisar un Pull Request de forma técnica y detallada
 - Ser específico en los problemas identificados y claro en las soluciones propuestas.
 - Reconocer y destacar aspectos positivos del PR.
 - Priorizar los problemas según su impacto y severidad.
-- Seguir siempre las directrices definidas en el archivo `globalrules.md`.
 
 ## Reglas Específicas por Tipo de Contenido
 

@@ -1,5 +1,6 @@
 ---
-description: Revisar el contenido
+name: review
+description: Revisar el contenido de un archivo del blog. Usar cuando el usuario quiere revisar ortografía, gramática y cumplimiento de reglas de un post, entrevista o autor.
 ---
 
 # Workflow para Revisión de Contenido
@@ -17,9 +18,8 @@ description: Revisar el contenido
 
 ## Reglas Generales
 
-- Seguir siempre las directrices definidas en el archivo `globalrules.md`.
 - Mantener un tono profesional, pero a la vez accesible y cercano.
 - Asegurar que todo el contenido publicado aporte un valor técnico claro a la comunidad.
 - Respetar y proteger la privacidad y seguridad de toda la información.
-- La función de este workflow es revisar texto existente, no generar contenido nuevo (ej: no se deben crear las respuestas para una entrevista).
+- La función de este skill es revisar texto existente, no generar contenido nuevo (ej: no se deben crear las respuestas para una entrevista).
 - No revisar archivos markdown en la carpeta `docs` o el README.md.
