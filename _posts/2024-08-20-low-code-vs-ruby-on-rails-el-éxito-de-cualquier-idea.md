@@ -3,7 +3,7 @@ layout: post
 title: 'Low Code y No Code vs Ruby on Rails: el éxito de cualquier idea'
 subtitle: 'low-code y no-code vs. Ruby on Rails: ¿Cuál es la mejor opción para tu
   próximo proyecto?'
-author: Santiago Pérez González
+author: suntea43
 tags: ruby-on-rails no-code low-code programación ideas mvp mvc
 images_path: "/assets/images/2024-08-20-low-code-vs-ruby-on-rails-el-éxito-de-cualquier-idea"
 background: "/assets/images/2024-08-20-low-code-vs-ruby-on-rails-el-éxito-de-cualquier-idea/tech.jpg"
