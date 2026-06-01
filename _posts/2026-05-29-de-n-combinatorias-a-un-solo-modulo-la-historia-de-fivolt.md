@@ -5,6 +5,7 @@ subtitle: Cómo mapeamos, simplificamos y homologamos el módulo de vacaciones e
 author: mgarcia
 tags: [buk, deuda-tecnica, vacaciones, ruby-on-rails, arquitectura, escalabilidad]
 image: "/assets/images/2026-05-29-de-n-combinatorias-a-un-solo-modulo-la-historia-de-fivolt/img-metadata.png"
+background: "/assets/images/2026-05-29-de-n-combinatorias-a-un-solo-modulo-la-historia-de-fivolt/background.png"
 date: 2026-05-29 12:00 -0300
 ---
 
@@ -81,3 +82,10 @@ Si tuviéramos que resumir el aprendizaje en cuatro ideas:
 **4. Pagar la deuda técnica sí tiene retorno concreto.** Antes de FIVOLT, cuando el equipo construía una mejora en el módulo de vacaciones, la pregunta inevitable era: ¿a quién le llega esto? ¿A Chile? ¿A México también? ¿O tiene que esperar a que termine la migración? Muchas veces la respuesta era que algunos países recibirían la mejora y otros no, al menos por un tiempo. Hoy, con un solo modelo consolidado, cualquier feature nuevo que construimos llega a todos los países al mismo tiempo. El módulo de vacaciones tiene ownership (control total) sobre sus propias capacidades: podemos iterar, corregir y mejorar con la certeza de que el impacto es universal y predecible. Esa velocidad de ejecución no habría sido posible sin haber ordenado primero la casa.
 
 FIVOLT no terminó de un día para otro. Fue un esfuerzo sostenido de varios equipos, con muchas iteraciones y más de algún bug inesperado en el camino. Pero hoy tenemos un módulo de vacaciones que podemos entender, mantener y extender con mucho más confianza. Y eso, en un sistema que toca los días libres de miles de personas, no es poca cosa.
+
+## Otros artículos del autor
+
+- [Superhéroes contra el maléfico Bug](https://buk.engineering/2022/07/20/superheros-contra-bugs.html) — Cómo el equipo enfrenta los bugs que amenazan la plataforma.
+- [Una migración directa del gimnasio](https://buk.engineering/2022/05/18/migracion-directa-gimnasio.html) — Migraciones en Ruby: lecciones aprendidas en Buk.
+- [Agilidad + onboarding = hold my beer!](https://buk.engineering/2022/04/01/agilidad-onboarding-hold%20my-beer.html) — Cómo aportar al código en las primeras semanas en Buk.
+- [Pair programming flujo completo](https://buk.engineering/2024/06/20/pair-progaming-flujo-completo.html) — Cómo aplicar el pair programming más allá del código.
