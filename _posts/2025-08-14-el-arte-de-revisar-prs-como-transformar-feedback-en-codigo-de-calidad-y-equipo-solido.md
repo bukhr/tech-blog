@@ -2,7 +2,7 @@
 layout: post
 title: 'El arte de revisar PRs: cómo transformar feedback en código de calidad y fortalecer la colaboración del equipo'
 subtitle: Más que un paso técnico, la revisión de PRs es una oportunidad para aprender, crecer y construir juntos.
-author: Rony Velásquez
+author: rvelasquez
 tags: 
    - Revisión de Código
    - Pull Request
