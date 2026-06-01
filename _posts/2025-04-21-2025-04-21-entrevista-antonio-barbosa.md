@@ -2,7 +2,7 @@
 layout: post
 title: Entrevista con Antonio Barbosa
 subtitle: Ingeniero de Software en Buk
-author: Antonio Barbosa
+author: aboneto
 date: 2025-04-21 11:23:06 -0600
 background: '/assets/img/interviews/antonio-barbosa/interviews-bg.jpg'
 categories: interview

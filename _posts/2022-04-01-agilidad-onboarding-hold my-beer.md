@@ -2,7 +2,7 @@
 layout: post
 title: Agilidad + onboarding = hold my beer!
 subtitle: En octubre del 2021 entré a Buk como desarrollador de software. Aquí te cuento cómo durante las primeras semanas ¡ya aportaba al código de la plataforma!
-author: Maximiliano Garcia Roe
+author: mgarcia
 tags: [buk, metodología]
 date: 2022-04-01 09:30 -0300
 images_path: "/assets/images/2022-04-01-agilidad-onboarding-hold my-beer"

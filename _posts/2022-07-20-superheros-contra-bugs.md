@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Superhéroes contra el maléfico Bug
-author: Maximiliano Garcia Roe
+author: mgarcia
 tags: desarrollo software agilidad
 images_path: "/assets/images/2022-07-20-superheroes-contra-bugs"
 background: "/assets/images/2022-07-20-superheroes-contra-bugs/portada.jpg"

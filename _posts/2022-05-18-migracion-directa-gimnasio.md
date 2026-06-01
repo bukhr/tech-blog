@@ -2,7 +2,7 @@
 layout: post
 subtitle: En Buk, la plataforma está siempre en constante crecimiento y aplicando mejoras, por lo que las migraciones son una parte esencial de la aplicación.
 title: Una migración directa del gimnasio
-author: Maximiliano García Roe
+author: mgarcia
 date: 2022-05-18 10:00 -0400
 tags: [ruby, migraciones]
 background: "/assets/images/2022-05-18-migracion-directa-gimnasio/portada.jpg"

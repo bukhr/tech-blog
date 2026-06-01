@@ -4,7 +4,7 @@ title: 'Acelerar la ingeniería de producto: Por qué un Playbook vale más que 
   de moda'
 subtitle: Menos debates, más entregas. Cómo un Playbook de estandarización transformó
   nuestra ingeniería de producto.
-author: Rony Velásquez
+author: rvelasquez
 tags:
 - Ingeniería de Producto
 - Estandarización
