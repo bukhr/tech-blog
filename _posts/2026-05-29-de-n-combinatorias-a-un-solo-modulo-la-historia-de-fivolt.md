@@ -5,6 +5,7 @@ subtitle: Cómo mapeamos, simplificamos y homologamos el módulo de vacaciones e
 author: mgarcia
 tags: [buk, deuda-tecnica, vacaciones, ruby-on-rails, arquitectura, escalabilidad]
 image: "/assets/images/2026-05-29-de-n-combinatorias-a-un-solo-modulo-la-historia-de-fivolt/img-metadata.png"
+background: "/assets/images/2026-05-29-de-n-combinatorias-a-un-solo-modulo-la-historia-de-fivolt/background.png"
 date: 2026-05-29 12:00 -0300
 ---
 
