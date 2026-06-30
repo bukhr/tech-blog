@@ -9,9 +9,9 @@ background: "/assets/images/2026-05-29-de-n-combinatorias-a-un-solo-modulo-la-hi
 date: 2026-05-29 12:00 -0300
 ---
 
-Hay un tipo de deuda técnica (technical debt) que no nace de la negligencia. Nace de la velocidad. En Buk somos una empresa que opera en 5 países y, para llegar hasta acá, tuvimos que crecer rápido. Muy rápido. Y cuando creces rápido, a veces la solución más pragmática es adaptar lo que ya existe en lugar de rediseñar desde cero.
+Hay un tipo de deuda técnica (technical debt) que no nace de la negligencia. Nace de la velocidad. En Buk somos una empresa que opera en 5 países y, para llegar hasta acá, tuvimos que crecer rápido. Muy rápido. Y cuando creces rápido, a veces la solución más pragmática es adaptar lo que ya existe en lugar de rediseñar desde cero — aunque eso, tarde o temprano, haya que pagarlo.
 
-Así fue como el módulo de vacaciones terminó siendo, en la práctica, varios módulos distintos conviviendo bajo el mismo techo. Y en algún punto del camino tomamos una decisión: en lugar de seguir parcheando país por país, íbamos a hacer un gran arreglo de una sola vez y dejar todo en la misma versión. Solo una vez. De ahí nació el nombre **FIVOLT**: *Fix Vacation One Last Time*.
+Así fue como el módulo de vacaciones terminó siendo, en la práctica, varios módulos distintos conviviendo bajo el mismo techo. Y en algún punto del camino tomamos una decisión: en lugar de seguir parcheando país por país, íbamos a hacer un gran arreglo de una sola vez y dejar todo en la misma versión. Solo una vez. De ahí nació el nombre **FIVOLT**: *Fix Vacation One Last Time*. Esta es la historia de cómo lo hicimos, y de por qué construir un producto confiable a largo plazo muchas veces significa apostar por lo sólido y duradero por sobre lo novedoso.
 
 ## El punto de partida: un módulo, muchos países, N realidades
 
@@ -81,4 +81,8 @@ Si tuviéramos que resumir el aprendizaje en cuatro ideas:
 
 **4. Pagar la deuda técnica sí tiene retorno concreto.** Antes de FIVOLT, cuando el equipo construía una mejora en el módulo de vacaciones, la pregunta inevitable era: ¿a quién le llega esto? ¿A Chile? ¿A México también? ¿O tiene que esperar a que termine la migración? Muchas veces la respuesta era que algunos países recibirían la mejora y otros no, al menos por un tiempo. Hoy, con un solo modelo consolidado, cualquier feature nuevo que construimos llega a todos los países al mismo tiempo. El módulo de vacaciones tiene ownership (control total) sobre sus propias capacidades: podemos iterar, corregir y mejorar con la certeza de que el impacto es universal y predecible. Esa velocidad de ejecución no habría sido posible sin haber ordenado primero la casa.
 
-FIVOLT no terminó de un día para otro. Fue un esfuerzo sostenido de varios equipos, con muchas iteraciones y más de algún bug inesperado en el camino. Pero hoy tenemos un módulo de vacaciones que podemos entender, mantener y extender con mucho más confianza. Y eso, en un sistema que toca los días libres de miles de personas, no es poca cosa.
+FIVOLT no terminó de un día para otro. Fue un esfuerzo sostenido de varios equipos, con muchas iteraciones y más de algún bug inesperado en el camino, pero hoy tenemos un módulo de vacaciones que podemos entender, mantener y extender con mucho más confianza — y eso, en un sistema que toca los días libres de miles de personas, no es poca cosa.
+
+Así construimos en Buk: apostando por una arquitectura robusta y escalable por sobre la novedad, y pagando la deuda técnica cuando corresponde, para que el producto siga siendo confiable a largo plazo. No es la parte más vistosa de la ingeniería, pero es la que nos permite seguir construyendo con confianza.
+
+Al final, eso es: *The beauty of boring tech*.
