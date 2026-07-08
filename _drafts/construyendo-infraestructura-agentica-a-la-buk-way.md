@@ -9,33 +9,24 @@ image: "/assets/images/2026-06-26-construyendo-infraestructura-agentica-a-la-buk
 date: 2026-06-26 09:00 -0300
 ---
 
-<!--
-GUÍA DEL BORRADOR
-- Estructura acordada a partir del guion de la charla "Construyendo Infraestructura Agéntica a la Buk Way".
-- Cada sección trae un lead-in redactado (tono modelo) + un comentario "CUBRIR:" con el contenido del/los slide(s) a desarrollar + marcadores de imagen 🖼️.
-- Convenciones del repo: español, términos técnicos en inglés con traducción en (), `##` para secciones y `###` para sub.
-- Antes de publicar: crear _authors/rnavarro.md y reemplazar las imágenes placeholder.
--->
+Cuando nació el equipo de DevEx AI, entre febrero y marzo del 2026, no empezamos escribiendo código. Nos planteamos una pregunta incómoda: **¿dónde estamos y hacia dónde queremos ir?** La respuesta fue igual de incómoda. Nuestro desarrollo IA-driven estaba estancado en el **context engineering**: pasarle información al prompt en el momento justo. Funciona bien con un puñado de repos y un equipo pequeño pero no funciona tan bien cuando tienes a más de 400 desarrolladores trabajando sobre un monolito y decenas de otros repositorios con stacks distintos.
 
-Cuando nació el equipo de DevEx AI, hace poco más de cinco sprints, no empezamos escribiendo código. Empezamos con una pregunta incómoda: *¿dónde estamos y hacia dónde queremos ir?* La respuesta fue igual de incómoda. Nuestro desarrollo IA-driven (impulsado por IA) estaba estancado en *context engineering* (ingeniería de contexto): pasarle información al prompt en el momento justo. Funciona bien con un puñado de repos y un equipo chico. No funciona cuando eres más de 400 desarrolladores trabajando sobre un monolito y decenas de stacks distintos.
-
-Necesitábamos autonomía. Y la necesitábamos a escala, sin amarrarnos a una caja negra de un proveedor. Este post cuenta cómo resolvimos eso: la decisión de construir en vez de comprar, la arquitectura que montamos sobre Jenkins, los problemas que solo aparecen en producción y la evidencia de que funciona.
-
-<!-- CUBRIR (intro, slides 1–3): contexto IADEVS opcional. NO incluir la bio personal de la charla — la cubre el `author`. Anclar la tensión central: autonomía a escala sin vendor lock-in. -->
+Necesitábamos autonomía y gobernabilidad. Y la necesitábamos a escala, sin amarrarnos a una caja negra de un proveedor. Este post cuenta cómo resolvimos eso: la decisión de construir en vez de comprar, la arquitectura que montamos sobre Jenkins, los problemas que solo aparecen en producción y la evidencia de que funciona.
 
 ## El punto de partida: IA estancada en Context Engineering
 
+El equipo de ingenieria de Buk venía probando distintas soluciones de IA durante en pos de aumentar su capacidad de desarrollo. En el pasar de pruebas y proveedores, la rutina agentica de los devs estaba fuertemente acoplada al **[context engineering](https://www.bassimeledath.com/blog/levels-of-agentic-engineering#level-3-context-engineering)**: cada dev o equipo construyó sus propios **contextos** internos para pasarlos **cada vez** que ejecutaban un prompt sobre un LLM, generando duplicidad, silos de información, documentacion fragmentada y costos exponenciales. La bola de nieve aparece cuando multiplicas estas practicas por los ~400 desarrolladores de Buk. Evidentemente teníamos que hacer algo!.
+
+Esto responde el **donde estamos** inicial, pero el **hacia dónde queremos ir?** seguía abierto. Para dar un salto natural, comenzamos a iterar sobre la idea del **[compounding engineering](https://www.bassimeledath.com/blog/levels-of-agentic-engineering#level-4-compounding-engineering)**: Los LLMs son _stateless_ por construcción, por lo que olvidan constantemente las instrucciones que les entregamos. Pero si agregas una capa de **compound**, tu LLM puede *aprender* de sus errores, acumulando conocimiento útil en el tiempo que servirá como punto de mejora a las siguientes iteraciones.
+
+Y acá es cuando aparece el break point: Cómo damos ese 1er paso hacia este **compound** tan anhelado? Cómo hacemos que nuestros agentes de IA posean una capa colectiva de conocimiento? Iterando ideas rapidamente notamos que necesitabamos algún tipo de **infraestructura** que soportara nuestras este **compound**: ejecución contra demanda y periodica, visibilidad y observabilidad, alcance organizacional, mecanismos de resiliencia, control de costos, etc.
 <!--
-CUBRIR (slides 3–4):
-- Qué es context engineering y por qué se nos quedó corto a nuestra escala/complejidad.
-- El salto conceptual a Compounding Engineering: construir sistemas que aprendan y acumulen conocimiento útil en el tiempo.
-- Dejar planteado el "hacia dónde vamos" como motor del resto del post.
-🖼️ Diagrama: context engineering vs. compounding engineering (el escalón siguiente).
+TO DO: Diagrama: context engineering vs. compounding engineering.
 -->
 
 ## Comprar o construir: por qué terminamos en Jenkins
 
-Con el destino claro, fuimos al mercado a buscar quién nos lo resolviera.
+Con la necesidad más clara, salimos al mercado a buscar quién nos lo resolviera.
 
 <!--
 CUBRIR (slides 4, 6):
