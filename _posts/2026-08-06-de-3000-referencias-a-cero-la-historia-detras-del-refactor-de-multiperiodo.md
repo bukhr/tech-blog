@@ -1,13 +1,12 @@
 ---
 layout: post
 title: 'De 3.000 referencias a cero: la historia detrás del refactor de Multiperiodo'
-subtitle: Cómo erradicamos un método con más de 3.000 referencias en el codebase, y lo que aprendimos en el camino sobre feature flags, análisis estático y coordinación transversal.
+subtitle: Cómo erradicamos un método con más de 3.000 referencias en el codebase, y lo que aprendimos en el camino sobre feature flags, análisis estático y compound engineering con harnesses de IA.
 author: ftorres
 tags: [buk, deuda-tecnica, refactor, feature-flags, ruby-on-rails, arquitectura, multiperiodo]
-image: "/assets/images/2026-08-05-de-3000-referencias-a-cero-la-historia-detras-del-refactor-de-multiperiodo/img-metadata.png"
-background: "/assets/images/2026-08-05-de-3000-referencias-a-cero-la-historia-detras-del-refactor-de-multiperiodo/background.png"
-images_path: /assets/images/2026-08-05-de-3000-referencias-a-cero-la-historia-detras-del-refactor-de-multiperiodo
-date: 2026-08-05 12:00 -0300
+image: "/assets/images/2026-08-06-de-3000-referencias-a-cero-la-historia-detras-del-refactor-de-multiperiodo/img-metadata.png"
+background: "/assets/images/2026-08-06-de-3000-referencias-a-cero-la-historia-detras-del-refactor-de-multiperiodo/background.png"
+date: 2026-08-06 12:00 -0300
 ---
 
 ¿Oye pero este proyecto sale en 6 meses o no? *Plot twist*: tarda 3 años. Esto es lo que ocurre cuando postergamos la solidez arquitectónica en favor de la velocidad del momento.
@@ -24,11 +23,11 @@ Ese es el inicio del proyecto Multiperiodo, el cual tenía como máxima permitir
 
 Esta iniciativa comienza a funcionar para cubrir ese dolor priorizando el mercado mexicano, que era el que más lo necesitaba. Por esto, nace un equipo que comienza a trabajar "rompiendo" la aplicación cuando se agrega más de una frecuencia de pago y corrigiendo todos los problemas que se levantaban en el camino con el objetivo de lograr un MVP (producto mínimo viable) para los clientes mexicanos.
 
-Durante el proyecto, para habilitar a México se hicieron muchos desarrollos bajo **Feature Flags** (FF) [^1] sin un plan de liberación a clientes Go To Market (GTM) claro. Lo importante era salir en México; total, después vemos qué hacemos para limpiar el código legacy (heredado) bajo FF.
+Durante el proyecto, para habilitar a México se hicieron muchos desarrollos bajo **Feature Flags** (FF) [^1] sin un plan claro de lanzamiento al mercado. Lo importante era salir en México; total, después vemos qué hacemos para limpiar el código legacy (heredado) bajo FF.
 
 Como es de esperarse, esconder la deuda técnica "bajo la alfombra" nos pasó factura. Utilizar Feature Flags de larga duración sin un plan de retiro explícito creó realidades paralelas dentro de nuestro código. Mantener múltiples versiones de la aplicación desató una reacción en cadena, que se puede representar de la siguiente forma:
 
-![Divergencia exponencial de código por Feature Flags. Cada nueva FF (N) duplica el número de versiones y caminos lógicos (V = 2^N) que conviven en producción]({{page.images_path}}/divergencia-exponencial-feature-flags.png)
+![Divergencia exponencial de código por Feature Flags. Cada nueva FF (N) duplica el número de versiones y caminos lógicos (V = 2^N) que conviven en producción](/assets/images/2026-08-06-de-3000-referencias-a-cero-la-historia-detras-del-refactor-de-multiperiodo/divergencia-exponencial-feature-flags.png)
 
 Esto trae varios problemas, entre los cuales cabe destacar:
 
@@ -42,13 +41,13 @@ En el caso de Multiperiodo, se logró el MVP para México pero se usaron FFs que
 
 ## De soluciones locales a un refactor arquitectónico
 
-Tras el MVP en México, caímos en la tentación de replicar la fórmula directa para el siguiente mercado, Colombia. Trabajamos casi seis meses aplicando "soluciones locales" para habilitar el país, hasta que caímos en cuenta de lo que estábamos haciendo.
+Tras el MVP en México, caímos en la tentación de replicar la fórmula directa para el siguiente mercado, Colombia. Trabajamos casi seis meses aplicando "soluciones locales" para habilitar el país, hasta que nos dimos cuenta de lo que estábamos haciendo.
 
 Mantener Feature Flags activas y seguir parchando código alrededor de `variable abierta` significaba que cada nuevo país multiplicaba exponencialmente la deuda técnica. No estábamos construyendo una plataforma escalable; estábamos creando versiones paralelas e incompatibles de Buk.
 
-![Versiones paralelas e incompatibles de Buk, con parches y feature flags distintas por país alrededor del método variable abierta]({{page.images_path}}/versiones-paralelas.png)
+![Versiones paralelas e incompatibles de Buk, con parches y feature flags distintas por país alrededor del método variable abierta](/assets/images/2026-08-06-de-3000-referencias-a-cero-la-historia-detras-del-refactor-de-multiperiodo/versiones-paralelas.png)
 
-Nos dimos cuenta de que continuar por ese camino era insostenible. Tuvimos un momento de lucidez arquitectónica y tomamos la decisión más difícil pero acertada: frenar la expansión por un momento, dar un paso atrás y apostar por la opción más "aburrida" pero correcta: extirpar el código legacy de raíz. El objetivo ya no era "habilitar Colombia", sino extirpar definitivamente el método `variable abierta` de toda la aplicación. El proyecto pasó de ser una iniciativa de un solo equipo a convertirse en una gran cruzada transversal que involucraría a gran parte de ingeniería de Buk.
+Continuar por ese camino era insostenible. Tuvimos un momento de lucidez arquitectónica y tomamos la decisión más difícil pero acertada: frenar la expansión por un momento, dar un paso atrás y apostar por la opción más "aburrida" pero correcta: extirpar el código legacy de raíz. El objetivo ya no era "habilitar Colombia", sino erradicar definitivamente el método `variable abierta` de toda la aplicación. El proyecto pasó de ser una iniciativa de un solo equipo a convertirse en una gran cruzada transversal que involucraría a gran parte de ingeniería de Buk.
 
 ## Escalando el refactor: alineación organizacional y Compound Engineering con IA
 
@@ -58,7 +57,7 @@ Cuando los equipos se involucraron en esta cruzada a fines de 2025, aún quedaba
 
 Para lograr alineación total en la organización, establecimos la erradicación del método como un OKR de Ingeniería para el primer semestre de 2026. Tener una métrica transparente y compartida transformó una "tarea pesada de refactor" en un objetivo visible por toda la empresa.
 
-Se tuvieron que involucrar muchos equipos para que resolvieran usos del método en sus flujos, entre los cuales había equipos para los que no era tan claro que este proyecto "les moviera la aguja". En ese sentido, para motivar el avance era clave hacer hincapié en el por qué era positivo para ellos apoyar y priorizar en sus agendas la iniciativa, además de que tuvieran claro de qué les servía a ellos que dejáramos de depender del método `variable abierta` cuando parecía que hacerlo no les sumaba.
+Se tuvieron que involucrar muchos equipos para que resolvieran usos del método en sus flujos, entre los cuales había equipos para los que no era tan claro que este proyecto "les moviera la aguja". En ese sentido, para motivar el avance era clave hacer hincapié en por qué era positivo para ellos apoyar y priorizar en sus agendas la iniciativa, además de que tuvieran claro de qué les servía a ellos que dejáramos de depender del método `variable abierta` cuando parecía que hacerlo no les sumaba.
 
 Cuando múltiples equipos se encontraban trabajando en la iniciativa, notamos dos puntos en el ámbito de gestión que fueron fundamentales para el avance de esta considerando su envergadura:
 
@@ -71,7 +70,7 @@ Al sumarse más equipos, chocamos con un cuello de botella evidente: los ingenie
 
 Nuestra primera iteración antes de que los equipos se involucraran había sido un Playbook estático con patrones para resolver casos comunes (como los CRUDs en el frontend); si te interesa el tema, recomiendo leer [Acelerar la ingeniería de producto: por qué un playbook vale más que un framework de moda](/2026/04/09/acelerar-la-ingenieria-de-producto-por-que-un-playbook-vale-mas-que-un-framework-de-moda.html). Pero sabíamos que podíamos ir más lejos. Convertimos ese conocimiento estático en un harness (arnés) dinámico creando una skill (habilidad) de Claude. Esta skill no solo leía el Playbook, sino que incorporaba el contexto de nuestro codebase, reglas de arquitectura y ejemplos de refactorizaciones previas exitosas. Con este harness, los equipos no necesitaban adivinar: trabajaban codo a codo con la skill ajustada a nuestra realidad, que resolvía las partes mecánicas del refactor, retroalimentándose continuamente con cada nuevo caso de borde que encontrábamos.
 
-## El enemigo (in)visible: análisis estático, delegates y UX
+## El enemigo (in)visible: UX, análisis estático y delegates
 
 A medida que los equipos avanzaban, chocamos con otro frente crítico: el impacto directo en los clientes. Cambiar el motor de pago no era solo refactorizar código backend; implicaba alterar selectores, tablas y flujos visuales a los que miles de administradores de RRHH ya estaban acostumbrados en su rutina diaria.
 
