@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'De 3.000 referencias a cero: la historia detrás del refactor de Multiperiodo'
+title: 'De 3.000 referencias a 0: la historia detrás del refactor de Multiperiodo'
 subtitle: Cómo erradicamos un método con más de 3.000 referencias en el codebase, y lo que aprendimos en el camino sobre feature flags, análisis estático y compound engineering con IA.
 author: ftorres
 tags: [buk, deuda-tecnica, refactor, feature-flags, ruby-on-rails, arquitectura, multiperiodo]
