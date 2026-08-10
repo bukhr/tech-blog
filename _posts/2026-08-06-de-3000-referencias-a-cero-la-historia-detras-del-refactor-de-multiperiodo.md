@@ -138,6 +138,8 @@ Hoy, extender la lógica de pagos a nuevas frecuencias o mercados ya no exige se
 
 Al final, de eso se trata: *The beauty of boring tech*.
 
+Si te interesa trabajar en problemas como este, [postula aquí](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile).
+
 ---
 
 [^1]: [Feature Flag (FF)] Técnica de desarrollo de software que permite que equipos enciendan y apaguen funcionalidades en tiempo de ejecución sin tener que desplegar nuevo código.
