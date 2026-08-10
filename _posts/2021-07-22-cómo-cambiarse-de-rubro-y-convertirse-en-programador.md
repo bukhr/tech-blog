@@ -57,4 +57,4 @@ Ha sido tan buena la entrada a Buk que haré un listado de cosas ~~porque no sé
 ### No sigas dudando
 Si eres alguien que se aburrió de su rubro y quieres programar, es muy importante el primer lugar donde uno trabaje desarrollando. No sé si todas las empresas puedan calmar la ansiedad y dudas que puede generar un cambio de un rubro en el que uno lleva un tiempo (*¿Años?*), pero sí sé que me alegra mucho haber entrado a Buk y poder programar y aprender cada día más con gente bacán *(chilenismo que se podría traducir por genial o fabuloso)*.
 
-Si te interesa trabajar en problemas como este, postula [aquí](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile).
+Si estás pensando en dar el salto al mundo del desarrollo, en Buk siempre estamos buscando personas con ganas de aprender, postula [aquí](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile).

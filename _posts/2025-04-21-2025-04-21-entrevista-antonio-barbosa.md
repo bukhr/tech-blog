@@ -57,4 +57,4 @@ Busco contribuir a través de mi conocimiento y experiencia, promoviendo la ense
 
 Sin duda, el mayor desafío es el stack tecnológico, ya que soy muy nuevo en Ruby on Rails.
 
-Si te interesa trabajar en problemas como este, postula [aquí](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile).
+Si quieres ser parte del equipo, postula [aquí](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile).

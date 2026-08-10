@@ -98,4 +98,4 @@ Los equipos quedaron motivados para seguir desarrollando sus prototipos. Ya se e
 
 Invitamos a desarrolladores y también a quienes aportan desde otras disciplinas a sumarse a experiencias como esta. Los hackathons son espacios únicos para aprender, experimentar, equivocarse rápido y construir cosas que quizá nunca se habrían atrevido a intentar solos. Si se les presenta alguna oportunidad así, tómenla, no se van a arrepentir. Asimismo, animamos a las empresas a seguir el ejemplo de Platanus y Buk, impulsando iniciativas que fomenten la colaboración, la innovación y el crecimiento profesional.
 
-Si te interesa trabajar en problemas como este, postula [aquí](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile).
+Si quieres vivir experiencias como esta y construir junto al equipo de Buk, postula [aquí](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile).

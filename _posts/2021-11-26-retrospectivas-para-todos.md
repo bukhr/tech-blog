@@ -137,10 +137,7 @@ Si es algo que se hará durante el próximo periodo, como facilitador deberás h
 
 La tarjeta más votada, representa el dolor del equipo, este es tu insight. Alcances o no a hacer el estudio de causa raíz, ya tienes el síntoma. Puedes usar herramientas para descubir el origen (dinámicas que puedes hacer igual sobre Miró): Como los 5 ¿por qué? o Diagrama de espinas de pescado y con ello hacer cambios en tu proceso, cerrando el ciclo de la mejora continua :).
 
-En Buk tenemos una cultura de aprendizaje y experimentación continua, por lo que cada cada equipo puede probar lo que le funcione mejor para alcanzar su propósito. En este post hablamos de una receta para Retros, pero para cada necesidad tomamos la práctica que mas nos sirve y la implementamos (¡somos agnósticos a las metodologías y nos gusta ir mas allá!). ¿Te gustaría aportar y ser parte de nuestro equipo? [¡Estamos contratando!]({{ site.work_with_us_link }})
-
-
-Si te interesa trabajar en problemas como este, postula [aquí](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile).
+En Buk tenemos una cultura de aprendizaje y experimentación continua, por lo que cada cada equipo puede probar lo que le funcione mejor para alcanzar su propósito. En este post hablamos de una receta para Retros, pero para cada necesidad tomamos la práctica que mas nos sirve y la implementamos (¡somos agnósticos a las metodologías y nos gusta ir mas allá!). ¿Te gustaría aportar y ser parte de nuestro equipo? [¡Estamos contratando!](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile)
 
 ---
 
