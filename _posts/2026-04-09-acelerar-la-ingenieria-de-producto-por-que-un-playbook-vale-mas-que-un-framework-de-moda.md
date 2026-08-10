@@ -21,9 +21,6 @@ En el desarrollo de software, muchas veces caemos en la trampa de pensar que la 
 
 En Buk, nos motiva construir un producto de calidad para nuestros clientes, cuidando cada decisión técnica que tomamos en el camino. Esto implica cuestionarnos de forma constante cómo reducir la fricción en el ciclo de desarrollo para entregar valor a los usuarios con mayor velocidad. La solución a esta incertidumbre no fue refactorizar primero el código, sino refactorizar nuestras decisiones, creando un Playbook de estandarización.
 
-
-Si te interesa trabajar en problemas como este, postula [aquí](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile).
-
 ---
 
 ## El problema: La ambigüedad del "Ahora"
