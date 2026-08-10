@@ -21,6 +21,9 @@ En el desarrollo de software, muchas veces caemos en la trampa de pensar que la 
 
 En Buk, nos motiva construir un producto de calidad para nuestros clientes, cuidando cada decisión técnica que tomamos en el camino. Esto implica cuestionarnos de forma constante cómo reducir la fricción en el ciclo de desarrollo para entregar valor a los usuarios con mayor velocidad. La solución a esta incertidumbre no fue refactorizar primero el código, sino refactorizar nuestras decisiones, creando un Playbook de estandarización.
 
+
+Si te interesa trabajar en problemas como este, postula [aquí](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile).
+
 ---
 
 ## El problema: La ambigüedad del "Ahora"
@@ -110,4 +113,4 @@ Si quieres llevar la velocidad de desarrollo de tu equipo al siguiente nivel, no
 
 _Si te entusiasma trabajar en un equipo donde la estandarización no es burocracia sino velocidad, donde las decisiones arquitectónicas se documentan para que la IA las aplique en tiempo real, y donde cada ingeniero puede resolver problemas complejos con consistencia porque el contexto correcto siempre está a su alcance —ya sea en formato remoto o híbrido—, en Buk siempre buscamos personas con ganas de construir producto con criterio, aportar claridad técnica y crecer junto a un equipo que prefiere alinear antes que improvisar._
 
-[**Postula aquí y construyamos juntos el futuro.**](https://info.buk.cl/reclutamiento-buk-devs)
+[**Postula aquí y construyamos juntos el futuro.**](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile)

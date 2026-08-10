@@ -166,3 +166,5 @@ Las evaluaciones **Offline** y **Online** cumplen roles complementarios. Offline
 Si hay un aprendizaje clave, es que la calidad de un prompt no depende solo de una “buena redacción”: depende del sistema que lo rodea. Con CC/CD, evals offline/online y observabilidad, puedes iterar sin perder control, priorizar mejoras por impacto y mantener un estándar de calidad a medida que el producto crece.
 
 El viaje de CI/CD a CC/CD es un paso necesario para cualquier equipo que quiera escalar sus funcionalidades de IA más allá de un MVP (producto mínimo viable). En Buk, este enfoque nos ha permitido domesticar la incertidumbre del modelo y ponerla al servicio del producto.
+
+Si te interesa trabajar en problemas como este, postula [aquí](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile).

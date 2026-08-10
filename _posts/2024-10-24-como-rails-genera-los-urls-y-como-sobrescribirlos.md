@@ -83,3 +83,5 @@ Para agregarle parámetros al URL en la generación podemos tomar varios caminos
   Esto reemplazará el comportamiento de todos los métodos dinámicos de generaciíon de URLs en la aplicación, sin excepción. En este nivel además, los método `url_for` y `path_for` solo pueden recibir hashes como `options`, por lo que se hace mucho más fácil sobrescribir.
 
 Esperamos que con esto hayas aprendido un poco del ciclo de vida de los links en Rails o que al menos te haya dado curiosidad el tema para seguir investigándolo por tu cuenta. Happy coding!
+
+Si te interesa trabajar en problemas como este, postula [aquí](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile).

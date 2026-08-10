@@ -76,4 +76,4 @@ Espero que este artículo sea de ayuda en tu camino profesional 😀
 
 Todo el material original y en el que ~~plagie~~ me basé  para escribir esta entrada, lo encontrarás en este link [Grow Your Own Tech Leads • Ken Scambler • YOW! 2019](https://www.youtube.com/watch?v=DOwxbjqPnwM)
 
-
+Si te interesa trabajar en problemas como este, postula [aquí](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile).

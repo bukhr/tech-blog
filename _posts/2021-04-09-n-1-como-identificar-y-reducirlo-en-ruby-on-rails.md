@@ -82,3 +82,5 @@ Una solución a este problema es utilizar una técnica conocida como Eager Loadi
     ![solucionar, n_1]({{page.images_path}}/bullet_alert.png)
 
 - **Rack Mini Profiler**: es la herramienta de profiling más popular de Rails. Muestra las llamadas a base de datos, inspecciona la pila de ejecución y provee una serie de métricas acerca del uso de memoria. Puedes revisar más información sobre esta herramienta [aquí](https://github.com/MiniProfiler/rack-mini-profiler).
+
+Si te interesa trabajar en problemas como este, postula [aquí](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile).

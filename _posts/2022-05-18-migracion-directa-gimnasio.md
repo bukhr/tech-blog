@@ -88,7 +88,7 @@ Puede que este proceso sea un poco lento pero ayuda que al crear un nueva column
 
 Esta es una de las tantas formas de crear una strong migration, ya que hay muchos otros casos de aplicación.  Por ejemplo agregar un `foreign key`, cambiar el nombre de una tabla, eliminar una columna, etc. La idea es siempre aplicar esta filosofía al momento de hacer un cambio importante en la base de datos.
 
-Si te interesó este y muchos otros artículos que tratamos en este blog, no dudes en revisar las [oportunidades de trabajo que tenemos en Buk](https://info.buk.cl/reclutamiento-buk-devs?utm_source=blog-eng&utm_medium=link&utm_campaign=outreach) y ¡únete a nosotros!
+Si te interesó este y muchos otros artículos que tratamos en este blog, no dudes en revisar las [oportunidades de trabajo que tenemos en Buk](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile) y ¡únete a nosotros!
 
 -----
 En este repositorio hay otros casos como este en [StrongMigrations](https://github.com/ankane/strong_migrations)

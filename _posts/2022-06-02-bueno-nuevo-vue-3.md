@@ -100,4 +100,4 @@ Junto con el lanzamiento de esta versión, el ecosistema ha evolucionado con muc
 
 **Suspense, fragments… ¡wow!** Hay mucho más que aprender de la tercera versión de Vue, y es una de las librerías que se utilizan en Buk para construir las interfaces e interacciones que son utilizadas por millones de usuarios de la plataforma dentro de latinoamérica.
 
-¡Te invito a conocer más de Buk y [los beneficios de ser un #buker](https://info.buk.cl/reclutamiento-buk-devs?utm_source=blog-eng&utm_medium=link&utm_campaign=outreach)!
+¡Te invito a conocer más de Buk y [los beneficios de ser un #buker](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile)!

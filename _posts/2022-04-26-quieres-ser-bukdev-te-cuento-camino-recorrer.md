@@ -14,7 +14,7 @@ En Buk estamos creciendo a pasos agigantados y actualmente tenemos presencia en 
 
 ## Postulación
 
-Primero que todo tienes que postular. Existen distintos medios para formar parte del proceso: a través de la página de [Buk](https://info.buk.cl/reclutamiento-buk-devs?utm_source=blog-eng&utm_medium=link&utm_campaign=outreach), portales de empleo como [GetOnBoard](https://www.getonbrd.com/companies/buk?utm_source=blog-eng&utm_medium=link&utm_campaign=outreach), [LinkedIn](https://www.linkedin.com/company/buk-cl/?utm_source=blog-eng&utm_medium=link&utm_campaign=outreach), referidos, campañas y hunting por mencionar las principales.
+Primero que todo tienes que postular. Existen distintos medios para formar parte del proceso: a través de la página de [Buk](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile), portales de empleo como [GetOnBoard](https://www.getonbrd.com/companies/buk?utm_source=blog-eng&utm_medium=link&utm_campaign=outreach), [LinkedIn](https://www.linkedin.com/company/buk-cl/?utm_source=blog-eng&utm_medium=link&utm_campaign=outreach), referidos, campañas y hunting por mencionar las principales.
 
 ![Postulación]({{page.images_path}}/postulacion.jpg)
 

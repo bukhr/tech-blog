@@ -37,3 +37,5 @@ Como en Buk desarrollamos con *RoR*, les dejo como bonus el blog *Boring Rails*,
 En gustos no hay nada escrito, y buscar lugares de trabajo que nos hagan felices no es la excepción. Este post apunta a quienes estén reflexionando una transición hacia el mundo startup (o al menos les cause curiosidad), y que sepan que es una gran experiencia llena de nuevos retos y por sobretodo, una nueva cultura. Buk vela por crear lugares de trabajo más felices, y para ello es fundamental que lo cumpla para si mismo. Por razones obvias, Buk usa Buk (shocking 😱), lo que le permite al team de Personas enfocarse en lo que realmente importa, su gente! 
 
 Si Buk te llamó la atención, recuerda que [estamos siempre en la búsqueda de nuevos *bukers*!]({{ site.work_with_us_link }}).
+
+Si te interesa trabajar en problemas como este, postula [aquí](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile).

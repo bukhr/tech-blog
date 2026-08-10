@@ -62,7 +62,7 @@ En fin, ese es un resumen tanto de mi experiencia como de muchos otros compañer
 
 ![nice]({{page.images_path}}/thumbs-up-kid.gif)
 
-Si quieres tener una experiencia como esta y trabajar con nosotros con una buena metodología de software postula en el siguiente [link](https://info.buk.cl/reclutamiento-buk-devs?utm_source=blog-eng&utm_medium=link&utm_campaign=outreach).
+Si quieres tener una experiencia como esta y trabajar con nosotros con una buena metodología de software postula en el siguiente [link](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile).
 
 
 ---

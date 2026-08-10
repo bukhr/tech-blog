@@ -132,3 +132,5 @@ En última instancia, la implementación exitosa de _Continuous Delivery_ y la e
 La adopción de _Continuous Delivery_ sin una estrategia de pruebas integral es como construir una autopista sin señalización. Establecer un umbral mínimo de pruebas unitarias y funcionales es necesario, pero insuficiente para navegar por la complejidad de un sistema moderno. Para desbloquear el verdadero potencial de la CD – entregas rápidas y confiables – se requiere una inversión estratégica en un espectro completo de pruebas, aplicado consistentemente a cada componente de nuestra arquitectura.
 
 Por lo tanto, la adopción de _Continuous Delivery_ implica no solo la velocidad de despliegue, sino también la calidad intrínseca de nuestro software. Al integrar pruebas robustas en cada etapa, transformamos la CD en un motor de entrega confiable, donde cada despliegue es un paso más hacia un software sólido y operativo.
+
+Si te interesa trabajar en problemas como este, postula [aquí](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile).

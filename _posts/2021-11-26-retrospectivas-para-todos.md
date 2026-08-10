@@ -139,6 +139,9 @@ La tarjeta más votada, representa el dolor del equipo, este es tu insight. Alca
 
 En Buk tenemos una cultura de aprendizaje y experimentación continua, por lo que cada cada equipo puede probar lo que le funcione mejor para alcanzar su propósito. En este post hablamos de una receta para Retros, pero para cada necesidad tomamos la práctica que mas nos sirve y la implementamos (¡somos agnósticos a las metodologías y nos gusta ir mas allá!). ¿Te gustaría aportar y ser parte de nuestro equipo? [¡Estamos contratando!]({{ site.work_with_us_link }})
 
+
+Si te interesa trabajar en problemas como este, postula [aquí](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile).
+
 ---
 
 [^1]: [Dot voting] Es un método de votación sencillo y transparente. Cuando se utiliza en una pizarra virtual se dejan disponibles circulos para que las personas los arrastren sobre un post-it y así mostrar una preferencia. En un entorno presencial, el dot voting se hace haciendo un punto con un marcador de pizarra, sobre los post-it físicos.
