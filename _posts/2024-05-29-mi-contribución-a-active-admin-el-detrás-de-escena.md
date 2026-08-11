@@ -62,3 +62,5 @@ Todo lo contado acá me dejó algunos pensamientos que quiero compartir:
 - Sí, cuantitativamente es un pequeño aporte; 2 líneas de funcionalidad y 15 de tests. Pero para mí fue un gran logro como persona y como *software engineer*.
 - El que quiere, puede. No soy experto en Ruby on Rails ni en Active Admin. Llevo pocos años trabajando como *software engineer* y no soy un programador innato. Simplemente puse en práctica uno de los [pilares de Buk](https://www.buk.cl/quienes-somos): *"Vamos al infinito y más allá"*. Fui curioso y no me contenté solamente con solucionarle el problema al agente de SAC; también vi una oportunidad de mejora y la aproveché, y con esfuerzo y perseverancia logré que mi código llegara a Active Admin.
 - Comparto los pensamientos de Felipe en su artículo "*[Rascando una picazón, o como mejoramos las cosas que usamos](https://buk.engineering/2022/05/10/rascando-picazon-como-mejoramos-cosas-usamos.html)*" sobre el ecosistema Open Source y el hecho de aportar en él.
+
+Si te interesa trabajar en problemas como este, postula [aquí](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile).

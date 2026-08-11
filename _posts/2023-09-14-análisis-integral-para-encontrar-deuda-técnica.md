@@ -240,3 +240,5 @@ La decisión basada en datos junto al conocimiento de cada equipo que comprende 
 Este proyecto nos permitió categorizar, según las necesidades de cada equipo, los archivos y módulos que necesitan un doble click, y así pagar esa deuda que hemos ido acumulando a lo largo de los años, lo hicimos parametrizable dado que no todos los equipos tienen una gran cantidad de sentries u otros equipos donde su coverage está sobre el 80%, éstas métricas que se vuelven irrelevantes para el análisis.
 
 [Link al **Google Colab** con el step by step](https://gist.github.com/meraioth/7a4562b466067541853f5d886d538b05)
+
+Si te interesa trabajar en problemas como este, postula [aquí](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile).

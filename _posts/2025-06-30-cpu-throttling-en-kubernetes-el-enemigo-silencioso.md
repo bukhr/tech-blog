@@ -108,3 +108,5 @@ En última instancia, transformar el *CPU throttling* de un adversario oculto a 
 ## Referencias
 
 * [Using Prometheus to Avoid Disasters with Kubernetes CPU Limits](https://aws.amazon.com/es/blogs/containers/using-prometheus-to-avoid-disasters-with-kubernetes-cpu-limits/) (by AWS)
+
+Si te interesa trabajar en problemas como este, postula [aquí](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile).

@@ -159,3 +159,5 @@ Queremos agradecer el apoyo y gestión del equipo de [CopilotKit](https://www.co
 También queremos agradecer a nuestro equipo de producto, y en especial a nuestra Product Manager ([Sara Calle](https://www.linkedin.com/in/sara-calle/)), por impulsar esta iniciativa y por confiar en el valor de ag-ui-protocol para Buk y la comunidad. Su apoyo fue clave para poder desarrollarla como parte de nuestro trabajo.
 
 Si estás construyendo agentes en Ruby esperamos que encuentres útil esta gema y que puedas contribuir a su desarrollo. Si quieres conversar sobre casos de uso, mejoras o integraciones, el [repositorio](https://github.com/ag-ui-protocol/ag-ui/tree/main/sdks/community/ruby) está abierto.
+
+Si te interesa trabajar en problemas como este, postula [aquí](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile).

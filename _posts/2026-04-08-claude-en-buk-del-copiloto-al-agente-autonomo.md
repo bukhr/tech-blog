@@ -116,3 +116,5 @@ Esto significa darle al agente acceso a la misma información que tenemos nosotr
 La visión final es tener agentes que sepan trabajar como nosotros por su propia cuenta. Que se puedan comunicar entre ellos si lo necesitan. Que usen las herramientas y el conocimiento que les hemos entregado. No como reemplazo de las personas, sino como una extensión del equipo que potencia nuestra capacidad de entrega.
 
 El futuro del desarrollo de software es uno donde las personas diseñan — en colaboración con el agente —, el agente escribe el código, y las personas revisan y aprueban. Y en Buk, estamos avanzando hacia allá.
+
+Si te interesa trabajar en problemas como este, postula [aquí](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile).

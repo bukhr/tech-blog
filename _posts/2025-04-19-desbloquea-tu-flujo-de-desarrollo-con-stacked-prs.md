@@ -153,3 +153,4 @@ La técnica de Stacked PRs es una herramienta poderosa que puede desbloquear el 
 
 Si bien presenta ciertos desafíos en la gestión de Git y la coordinación del equipo, los beneficios potenciales para la eficiencia y la calidad del desarrollo son significativos. Te animamos a explorar esta técnica, quizás comenzando con proyectos o funcionalidades más complejas. Experimentar con Stacked PRs puede ser el paso clave para desbloquear un flujo de trabajo más ágil y colaborativo en tu equipo.
 
+Si te interesa trabajar en problemas como este, postula [aquí](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile).

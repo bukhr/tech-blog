@@ -8,7 +8,7 @@ date: 2022-06-13 11:33 -0300
 images_path: "/assets/images/2022-06-13-mob-programming-en-buk"
 background: "/assets/images/2022-06-13-mob-programming-en-buk/portada.jpg"
 ---
-En el proceso de crecimiento de Buk donde se ha experimentado recientemente el aumento de contrataciones sobretodo en áreas de desarrollo, hemos podido recibir al mejor talento ([estamos buscando siempre](https://info.buk.cl/reclutamiento-buk-devs?hsLang=es-cl) 😜) y a pesar de que nuestro proceso de _onboarding_ se ha adaptado a este ritmo, hemos detectado oportunidades de mejora.
+En el proceso de crecimiento de Buk donde se ha experimentado recientemente el aumento de contrataciones sobretodo en áreas de desarrollo, hemos podido recibir al mejor talento ([estamos buscando siempre](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile) 😜) y a pesar de que nuestro proceso de _onboarding_ se ha adaptado a este ritmo, hemos detectado oportunidades de mejora.
 
 El caso para el presente artículo es el siguiente:
 
@@ -90,3 +90,5 @@ Los beneficios e impacto de **Mob Programming** cobran especial relevancia para 
 Atreverse a nuevas cosas siempre es un desafío y trae cierto esfuerzo adicional al inicio, pero desde nuestra experiencia vale la pena el esfuerzo cuando generamos instancias donde el equipo está trabajando, compartiendo y aprendiendo unos de otros y fortaleciendo la comunicación y relación del equipo.
 
 ![Conclusiones]({{page.images_path}}/mob-programming-meme-2.png)
+
+Si te interesa trabajar en problemas como este, postula [aquí](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile).

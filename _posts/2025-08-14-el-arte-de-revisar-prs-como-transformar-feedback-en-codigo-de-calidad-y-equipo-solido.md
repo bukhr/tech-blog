@@ -112,4 +112,4 @@ Si quieres llevar tus revisiones de PR al siguiente nivel, no pienses en ellas c
 
 _Si te apasiona el desarrollo de software, disfrutas trabajar en un entorno donde la colaboración y la calidad del código son prioridad, y te motiva la idea de contribuir desde cualquier lugar —ya sea en formato remoto o híbrido—, en Buk siempre buscamos personas con ganas de aprender, aportar y crecer junto al equipo._
 
-[**Postula aquí y construyamos juntos el futuro.**](https://buk.buk.cl/trabaja-con-nosotros)
+[**Postula aquí y construyamos juntos el futuro.**](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile)
