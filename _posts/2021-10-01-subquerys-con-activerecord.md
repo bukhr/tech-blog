@@ -68,6 +68,4 @@ En la consulta anterior hemos anidado dos querys, una dentro de otra, para halla
 
 Como podemos ver, usar subquerys nos permite realizar consultas sin perder las ventajas que nos brinda hacerlo por ActiveRecord en comparación a hacerlo con SQL plano.
 
-En buk siempre intentamos optimizar los procesos para poder brindarle a nuestros clientes una mejor experiencia. Si te gusta aplicar este tipo de trucos y quieres ser parte de nuestro equipo, postúlate! [¡Estamos contratando!]({{ site.work_with_us_link }})
-
-Si te interesa trabajar en problemas como este, postula [aquí](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile).
+En buk siempre intentamos optimizar los procesos para poder brindarle a nuestros clientes una mejor experiencia. Si te gusta aplicar este tipo de trucos y quieres ser parte de nuestro equipo, postúlate! [¡Estamos contratando!](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile)

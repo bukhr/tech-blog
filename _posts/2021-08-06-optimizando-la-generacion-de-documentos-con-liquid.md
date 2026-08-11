@@ -218,6 +218,4 @@ y 💥 ! Podremos usar objetos con keys de símbolos o strings, reutilizando cá
 
 ## Resumen
 
-En general en Buk nos gusta usar gemas que aportan con funcionalidades a nuestro producto y no reinventar la rueda, pero más de una vez nos ha pasado que al escalar debemos "estrujar" las gemas, o incluso [parcharlas](https://github.com/bukhr). Si te gusta ir más lejos, meter las manos en gemas y aportar al ecosistema opensource... ¿Te animas a hacerlo juntos? [¡Estamos contratando!]({{ site.work_with_us_link }})
-
-Si te interesa trabajar en problemas como este, postula [aquí](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile).
+En general en Buk nos gusta usar gemas que aportan con funcionalidades a nuestro producto y no reinventar la rueda, pero más de una vez nos ha pasado que al escalar debemos "estrujar" las gemas, o incluso [parcharlas](https://github.com/bukhr). Si te gusta ir más lejos, meter las manos en gemas y aportar al ecosistema opensource... ¿Te animas a hacerlo juntos? [¡Estamos contratando!](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile)
