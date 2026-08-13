@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 700" width="100%" role="img" aria-label="Comparación del alcance de bundle update rails contra bundle update --conservative rails">
+  <style>
+    .t { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .title { font-size: 19px; font-weight: 700; fill: #2b3c6a; }
+    .sub { font-size: 13px; fill: #5b6785; }
+    .node { font-size: 13px; font-weight: 600; }
+    .cap { font-size: 12px; fill: #5b6785; }
+    .legend { font-size: 12.5px; fill: #3d4a68; }
+  </style>
+  <rect width="760" height="700" fill="#ffffff"/>
+
+  <!-- ============ PANEL A ============ -->
+  <text class="t title" x="24" y="34">bundle update rails</text>
+  <text class="t sub" x="24" y="56">Bundler desbloquea rails y toda su cadena: 74 líneas de diff.</text>
+
+  <!-- rails -->
+  <rect x="310" y="76" width="140" height="38" rx="8" fill="#2f4daa"/>
+  <text class="t node" x="380" y="100" text-anchor="middle" fill="#ffffff">rails</text>
+  <text class="t cap" x="466" y="100">lo que pediste mover</text>
+
+  <!-- componentes -->
+  <rect x="150" y="152" width="130" height="34" rx="8" fill="#73a0db"/>
+  <text class="t node" x="215" y="174" text-anchor="middle" fill="#ffffff">actionpack</text>
+  <rect x="315" y="152" width="130" height="34" rx="8" fill="#73a0db"/>
+  <text class="t node" x="380" y="174" text-anchor="middle" fill="#ffffff">activerecord</text>
+  <rect x="480" y="152" width="130" height="34" rx="8" fill="#73a0db"/>
+  <text class="t node" x="545" y="174" text-anchor="middle" fill="#ffffff">actionview</text>
+
+  <!-- otras gemas del Gemfile -->
+  <rect x="14" y="216" width="118" height="30" rx="8" fill="#ffffff" stroke="#9aa5bd" stroke-dasharray="4 3"/>
+  <text class="t node" x="73" y="236" text-anchor="middle" fill="#5b6785">rack-attack</text>
+  <rect x="14" y="276" width="118" height="30" rx="8" fill="#ffffff" stroke="#9aa5bd" stroke-dasharray="4 3"/>
+  <text class="t node" x="73" y="296" text-anchor="middle" fill="#5b6785">rack-cors</text>
+
+  <!-- transitivas movidas -->
+  <rect x="150" y="244" width="130" height="34" rx="8" fill="#f8b62d"/>
+  <text class="t node" x="215" y="266" text-anchor="middle" fill="#3a2d05">rack</text>
+  <rect x="315" y="244" width="130" height="34" rx="8" fill="#f8b62d"/>
+  <text class="t node" x="380" y="266" text-anchor="middle" fill="#3a2d05">nokogiri</text>
+  <rect x="480" y="244" width="130" height="34" rx="8" fill="#f8b62d"/>
+  <text class="t node" x="545" y="266" text-anchor="middle" fill="#3a2d05">concurrent-ruby</text>
+
+  <!-- flechas rails -> componentes -->
+  <g stroke="#2f4daa" stroke-width="2" fill="none">
+    <path d="M355 114 L 215 152"/>
+    <path d="M380 114 L 380 152"/>
+    <path d="M405 114 L 545 152"/>
+  </g>
+  <!-- flechas componentes -> transitivas -->
+  <g stroke="#c98a10" stroke-width="2" fill="none">
+    <path d="M215 186 L 215 244"/>
+    <path d="M380 186 L 380 244"/>
+    <path d="M545 186 L 545 244"/>
+  </g>
+  <!-- flechas otras gemas -> rack -->
+  <g stroke="#9aa5bd" stroke-width="1.5" stroke-dasharray="4 3" fill="none">
+    <path d="M132 234 L 160 244"/>
+    <path d="M132 288 L 170 278"/>
+  </g>
+
+  <text class="t cap" x="380" y="304" text-anchor="middle">tres gemas que tu cambio en rails no necesitaba, y que nadie revisó</text>
+
+  <line x1="24" y1="336" x2="736" y2="336" stroke="#e3e7f0" stroke-width="2"/>
+
+  <!-- ============ PANEL B ============ -->
+  <text class="t title" x="24" y="378">bundle update --conservative rails</text>
+  <text class="t sub" x="24" y="400">Solo rails y sus componentes se mueven. El resto queda tal cual estaba en el lock.</text>
+
+  <rect x="310" y="420" width="140" height="38" rx="8" fill="#2f4daa"/>
+  <text class="t node" x="380" y="444" text-anchor="middle" fill="#ffffff">rails</text>
+
+  <rect x="150" y="496" width="130" height="34" rx="8" fill="#73a0db"/>
+  <text class="t node" x="215" y="518" text-anchor="middle" fill="#ffffff">actionpack</text>
+  <rect x="315" y="496" width="130" height="34" rx="8" fill="#73a0db"/>
+  <text class="t node" x="380" y="518" text-anchor="middle" fill="#ffffff">activerecord</text>
+  <rect x="480" y="496" width="130" height="34" rx="8" fill="#73a0db"/>
+  <text class="t node" x="545" y="518" text-anchor="middle" fill="#ffffff">actionview</text>
+
+  <rect x="150" y="588" width="130" height="34" rx="8" fill="#f2f4f8" stroke="#c3cad9"/>
+  <text class="t node" x="215" y="610" text-anchor="middle" fill="#8a93a8">rack</text>
+  <rect x="315" y="588" width="130" height="34" rx="8" fill="#f2f4f8" stroke="#c3cad9"/>
+  <text class="t node" x="380" y="610" text-anchor="middle" fill="#8a93a8">nokogiri</text>
+  <rect x="480" y="588" width="130" height="34" rx="8" fill="#f2f4f8" stroke="#c3cad9"/>
+  <text class="t node" x="545" y="610" text-anchor="middle" fill="#8a93a8">concurrent-ruby</text>
+
+  <g stroke="#2f4daa" stroke-width="2" fill="none">
+    <path d="M355 458 L 215 496"/>
+    <path d="M380 458 L 380 496"/>
+    <path d="M405 458 L 545 496"/>
+  </g>
+  <g stroke="#c3cad9" stroke-width="2" stroke-dasharray="5 4" fill="none">
+    <path d="M215 530 L 215 588"/>
+    <path d="M380 530 L 380 588"/>
+    <path d="M545 530 L 545 588"/>
+  </g>
+
+  <text class="t cap" x="380" y="648" text-anchor="middle">siguen fijadas en la versión del Gemfile.lock: cero líneas de diff</text>
+
+  <!-- leyenda -->
+  <g transform="translate(24,668)">
+    <rect x="0" y="0" width="14" height="14" rx="3" fill="#2f4daa"/>
+    <text class="t legend" x="20" y="12">gema pedida</text>
+    <rect x="128" y="0" width="14" height="14" rx="3" fill="#73a0db"/>
+    <text class="t legend" x="148" y="12">componentes del mismo release</text>
+    <rect x="388" y="0" width="14" height="14" rx="3" fill="#f8b62d"/>
+    <text class="t legend" x="408" y="12">transitiva movida</text>
+    <rect x="546" y="0" width="14" height="14" rx="3" fill="#f2f4f8" stroke="#c3cad9"/>
+    <text class="t legend" x="566" y="12">transitiva intacta</text>
+  </g>
+</svg>

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 560" width="100%" role="img" aria-label="Flujo del plugin: el hook decide si inyectar conservative y re-ejecuta el comando">
+  <style>
+    .t { font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+    .lbl { font-size: 13.5px; font-weight: 600; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 13px; }
+    .cap { font-size: 12px; fill: #5b6785; }
+    .step { font-size: 12px; font-weight: 700; fill: #9aa5bd; letter-spacing: .08em; }
+  </style>
+  <rect width="760" height="560" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#2f4daa"/>
+    </marker>
+    <marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#9aa5bd"/>
+    </marker>
+  </defs>
+
+  <!-- PASE 1 -->
+  <text class="t step" x="24" y="30">PRIMER PASE</text>
+
+  <rect x="24" y="44" width="250" height="40" rx="8" fill="#eef2fb" stroke="#2f4daa"/>
+  <text class="t mono" x="149" y="69" text-anchor="middle" fill="#203b9c">bundle update rails</text>
+
+  <path d="M274 64 L 330 64" stroke="#2f4daa" stroke-width="2" marker-end="url(#a)" fill="none"/>
+
+  <rect x="338" y="44" width="230" height="40" rx="8" fill="#2f4daa"/>
+  <text class="t lbl" x="453" y="69" text-anchor="middle" fill="#ffffff">hook before-install-all</text>
+
+  <path d="M453 84 L 453 100" stroke="#2f4daa" stroke-width="2" marker-end="url(#a)" fill="none"/>
+
+  <!-- checklist -->
+  <rect x="338" y="106" width="398" height="176" rx="10" fill="#fafbfe" stroke="#d8dfee"/>
+  <text class="t cap" x="358" y="130" font-weight="700" fill="#2b3c6a">¿inyecto --conservative?</text>
+  <text class="t cap" x="358" y="156">1. ¿el subcomando es <tspan class="mono">update</tspan>?</text>
+  <text class="t cap" x="358" y="180">2. ¿no trae ya una estrategia explícita?</text>
+  <text class="t cap" x="358" y="204">3. ¿nombra gemas o un grupo?</text>
+  <text class="t cap" x="358" y="228">4. ¿no está activo el opt-out por entorno?</text>
+  <text class="t cap" x="358" y="258" font-weight="700" fill="#1f7a4d">las cuatro en sí → inyecta</text>
+
+  <path d="M330 194 L 240 194" stroke="#9aa5bd" stroke-width="2" marker-end="url(#g)" fill="none" stroke-dasharray="5 4"/>
+  <rect x="24" y="160" width="206" height="68" rx="8" fill="#f4f6fa" stroke="#c3cad9"/>
+  <text class="t cap" x="127" y="186" text-anchor="middle" font-weight="700" fill="#5b6785">alguna en no</text>
+  <text class="t cap" x="127" y="208" text-anchor="middle">se hace a un lado: el comando</text>
+  <text class="t cap" x="127" y="222" text-anchor="middle">corre tal como lo escribiste</text>
+
+  <path d="M453 282 L 453 322" stroke="#2f4daa" stroke-width="2" marker-end="url(#a)" fill="none"/>
+
+  <rect x="300" y="330" width="306" height="44" rx="8" fill="#f8b62d"/>
+  <text class="t lbl" x="453" y="350" text-anchor="middle" fill="#3a2d05">Kernel.exec</text>
+  <text class="t cap" x="453" y="366" text-anchor="middle" fill="#3a2d05">reemplaza el proceso, hereda TTY y exit code</text>
+
+  <line x1="24" y1="398" x2="736" y2="398" stroke="#e3e7f0" stroke-width="2"/>
+
+  <!-- PASE 2 -->
+  <text class="t step" x="24" y="428">SEGUNDO PASE</text>
+
+  <rect x="24" y="442" width="290" height="40" rx="8" fill="#eef2fb" stroke="#2f4daa"/>
+  <text class="t mono" x="169" y="467" text-anchor="middle" fill="#203b9c">bundle update --conservative rails</text>
+
+  <path d="M314 462 L 370 462" stroke="#2f4daa" stroke-width="2" marker-end="url(#a)" fill="none"/>
+
+  <rect x="378" y="442" width="230" height="40" rx="8" fill="#2f4daa"/>
+  <text class="t lbl" x="493" y="467" text-anchor="middle" fill="#ffffff">el hook se dispara de nuevo</text>
+
+  <text class="t cap" x="24" y="512">Ve que el comando ya trae una estrategia explícita (paso 2), declina inyectar y deja correr el update.</text>
+  <text class="t cap" x="24" y="534" font-weight="700" fill="#2b3c6a">El guard contra la recursión infinita y el caso “el usuario ya lo pidió” son el mismo chequeo.</text>
+</svg>
