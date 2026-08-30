@@ -4,6 +4,7 @@ title: La línea de código que mejoró el performance en un 7.700%
 subtitle: Cómo un valor de retorno que nadie usaba se convirtió en el 99% del tiempo de carga de una página
 author: ginzunza
 tags: [ruby, rails, performance, profiling, flamegraph]
+images_path: "/assets/images/2026-08-30-la-linea-de-codigo-que-mejoro-el-performance-en-un-7700-por-ciento"
 date: 2026-08-30 12:00 -0400
 ---
 La ficha del empleado de unos clientes tardaba 70 segundos en cargar. Después del fix, la ficha comenzó a responder en menos de 1 segundo (~78 veces más rápido). La solución fue agregar una sola instrucción: `nil`. En este post abordaremos sobre cómo un valor de retorno que nadie usaba se convirtió en el 99% del tiempo de carga de la página, y sobre cómo usar herramientas de profiling, y no la intuición (optimizar la DB), fue lo que resolvió el problema.
@@ -14,6 +15,8 @@ La ficha del empleado de unos clientes tardaba 70 segundos en cargar. Después d
 Un cliente (luego más) reportó que la ficha de sus empleados era inusable y que, por lo tanto, no podía trabajar. Coincidentemente empezaron a aparecer *timeouts* en los logs, lo que dio la idea de que podría haber sido introducido por un cambio reciente. Al reproducir el caso con [rack-mini-profiler](https://github.com/MiniProfiler/rack-mini-profiler), la request completa tardaba ~70 segundos, y el 99% de ese tiempo lo consumía un solo render: la cell del perfil del empleado, con 69,5 segundos y 569 queries SQL.
 
 Las hipótesis iniciales apuntaban a los sospechosos de siempre: queries lentas, alguna feature nueva, algún cálculo pesado en la vista, etc. El profiler descartó al primero de inmediato, ya que sólo el 0,4% del tiempo era SQL. El 99,6% restante era Ruby puro.
+
+![rack-mini-profiler antes del fix: el render del perfil consume 69.498 ms y 569 queries, con solo 0,2% del tiempo en SQL]({{page.images_path}}/miniprofiler-antes.png)
 
 ## El análisis: un flamegraph donde el protagonista era el Garbage Collector
 
@@ -60,6 +63,8 @@ Luego de aplicar los cambios y volver a analizar, se obtuvo lo siguiente:
 
 - La request completa bajó de ~70 segundos a ~0,9 segundos: 78 veces más rápido, una mejora de 7.700%.
 - El render del perfil bajó de 69.498 ms a 95 ms, y sus queries de 569 a 28.
+
+![rack-mini-profiler después del fix: la misma página responde en menos de 1 segundo y el SQL vuelve a ser una fracción visible del tiempo (17,3%)]({{page.images_path}}/miniprofiler-despues.png)
 
 ## Conclusiones
 
