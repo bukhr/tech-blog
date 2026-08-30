@@ -16,7 +16,7 @@ Un cliente (luego más) reportó que la ficha de sus empleados era inusable y qu
 
 Las hipótesis iniciales apuntaban a los sospechosos de siempre: queries lentas, alguna feature nueva, algún cálculo pesado en la vista, etc. El profiler descartó al primero de inmediato, ya que sólo el 0,4% del tiempo era SQL. El 99,6% restante era Ruby puro.
 
-![rack-mini-profiler antes del fix: el render del perfil consume 69.498 ms y 569 queries, con solo 0,2% del tiempo en SQL]({{page.images_path}}/miniprofiler-antes.png)
+![rack-mini-profiler antes del fix el render del perfil consumía 69.498 ms y 569 queries, con sólo 0,2% del tiempo en SQL]({{page.images_path}}/miniprofiler-antes.png)
 
 ## El análisis: un flamegraph donde el protagonista era el Garbage Collector
 
@@ -64,7 +64,7 @@ Luego de aplicar los cambios y volver a analizar, se obtuvo lo siguiente:
 - La request completa bajó de ~70 segundos a ~0,9 segundos: 78 veces más rápido, una mejora de 7.700%.
 - El render del perfil bajó de 69.498 ms a 95 ms, y sus queries de 569 a 28.
 
-![rack-mini-profiler después del fix: la misma página responde en menos de 1 segundo y el SQL vuelve a ser una fracción visible del tiempo (17,3%)]({{page.images_path}}/miniprofiler-despues.png)
+![rack-mini-profiler después del fix la misma página respondía en menos de 1 segundo]({{page.images_path}}/miniprofiler-despues.png)
 
 ## Conclusiones
 
