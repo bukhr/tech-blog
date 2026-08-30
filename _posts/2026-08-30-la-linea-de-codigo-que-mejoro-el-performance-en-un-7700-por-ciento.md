@@ -6,14 +6,14 @@ author: ginzunza
 tags: [ruby, rails, performance, profiling, flamegraph]
 date: 2026-08-30 12:00 -0400
 ---
-La ficha del empleado de unos clientes tardaba 70 segundos en cargar. Después del fix, la ficha comenzó a responder en menos de 1 segundo: ~78 veces más rápido. La solución fue agregar una sola instrucción: `nil`. En este post abordaremos sobre cómo un valor de retorno que nadie usaba se convirtió en el 99% del tiempo de carga de la página, y sobre cómo usar *flamegraph*, y no la intuición (optimizar la DB), fue lo que resolvió el problema.
+La ficha del empleado de unos clientes tardaba 70 segundos en cargar. Después del fix, la ficha comenzó a responder en menos de 1 segundo (~78 veces más rápido). La solución fue agregar una sola instrucción: `nil`. En este post abordaremos sobre cómo un valor de retorno que nadie usaba se convirtió en el 99% del tiempo de carga de la página, y sobre cómo usar herramientas de profiling, y no la intuición (optimizar la DB), fue lo que resolvió el problema.
 
 
 ## El inicio: 70 segundos para ver una ficha
 
 Un cliente (luego más) reportó que la ficha de sus empleados era inusable y que, por lo tanto, no podía trabajar. Coincidentemente empezaron a aparecer *timeouts* en los logs, lo que dio la idea de que podría haber sido introducido por un cambio reciente. Al reproducir el caso con [rack-mini-profiler](https://github.com/MiniProfiler/rack-mini-profiler), la request completa tardaba ~70 segundos, y el 99% de ese tiempo lo consumía un solo render: la cell del perfil del empleado, con 69,5 segundos y 569 queries SQL.
 
-Las hipótesis iniciales apuntaban a los sospechosos de siempre: queries lentas, alguna feature nueva, algún cálculo pesado en la vista. El profiler descartó al primero de inmediato: solo el 0,4% del tiempo era SQL. El 99,6% restante era Ruby puro.
+Las hipótesis iniciales apuntaban a los sospechosos de siempre: queries lentas, alguna feature nueva, algún cálculo pesado en la vista, etc. El profiler descartó al primero de inmediato, ya que sólo el 0,4% del tiempo era SQL. El 99,6% restante era Ruby puro.
 
 ## El análisis: un flamegraph donde el protagonista era el Garbage Collector
 
@@ -30,8 +30,6 @@ Con la evidencia anterior, aún era difícil de saber en dónde estaba exactamen
 ## La causa: un valor de retorno que ERB serializaba sin que nadie lo pidiera
 
 Luego de tener toda la evidencia y entender que el problema estaba en Ruby en vez de la base de datos, ocupamos Claude para ver si nos facilitaba la parte más abstracta que era el análisis sobre qué parte del código era la involucrada. Con lo anterior, pudimos concluir lo siguiente:
-
-La causa se podía dividir en tres partes:
 
 1. Los métodos `item` de nuestros widgets de formulario terminaban en `@items << {}`, por lo que retornaban el array `@items` completo.
 2. En ERB, `<%= widget.item do %>...<% end %>` llama `.to_s` sobre ese valor de retorno. Para un array, `.to_s` es `Array#inspect`: inspecciona recursivamente todo lo acumulado adentro.
