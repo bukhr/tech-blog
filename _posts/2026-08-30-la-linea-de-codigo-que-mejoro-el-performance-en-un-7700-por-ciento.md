@@ -7,7 +7,7 @@ tags: [ruby, rails, performance, profiling, flamegraph]
 images_path: "/assets/images/2026-08-30-la-linea-de-codigo-que-mejoro-el-performance-en-un-7700-por-ciento"
 date: 2026-08-30 12:00 -0400
 ---
-La ficha del empleado de unos clientes tardaba 70 segundos en cargar. Después del fix, la ficha comenzó a responder en menos de 1 segundo (~78 veces más rápido). La solución fue agregar una sola instrucción: `nil`. En este post abordaremos sobre cómo un valor de retorno que nadie usaba se convirtió en el 99% del tiempo de carga de la página, y sobre cómo usar herramientas de profiling, y no la intuición (optimizar la DB), fue lo que resolvió el problema.
+La ficha del empleado de unos clientes tardaba 70 segundos en cargar. Después del fix, la ficha comenzó a responder en menos de 1 segundo (~78 veces más rápido). La solución fue agregar una sola instrucción: `nil`. En este post abordaremos cómo un valor de retorno que nadie usaba se convirtió en el 99% del tiempo de carga de la página, y cómo usar herramientas de profiling, y no la intuición (optimizar la DB), fue lo que resolvió el problema.
 
 
 ## El inicio: 70 segundos para ver una ficha
@@ -68,8 +68,8 @@ Luego de aplicar los cambios y volver a analizar, se obtuvo lo siguiente:
 
 ## Conclusiones
 
-- **Analiza antes de optimizar.** Por lo general las hipótesis siempre parten sin evidencia y se inclinan por la base de datos o algún feature que ha ocasionado problemas en el pasado. Es importante ocupar las herramientas de profiling o monitoreo que se tienen disponibles. En este caso el profiler, el flamegraph y el *análisis de Claude* encontraron en minutos algo que en el pasado habría significado leer código, debugging y mucho trabajo manual 
+- **Analiza antes de optimizar.** Por lo general las hipótesis siempre parten sin evidencia y se inclinan por la base de datos o algún feature que ha ocasionado problemas en el pasado. Es importante ocupar las herramientas de profiling o monitoreo que se tienen disponibles. En este caso el profiler, el flamegraph y el *análisis de Claude* encontraron en minutos algo que en el pasado habría significado leer código, debugging y mucho trabajo manual.
 - **Si el GC es el protagonista, busca quién aloca.** Un 58% de tiempo en *garbage collection* no es un problema del GC: es el síntoma de que algo está creando objetos de forma masiva. Aquí eran los strings de `inspect`.
 - **Los valores de retorno implícitos de Ruby son API.** Un método que termina en `@items << {}` retorna el array completo aunque nadie lo pida. Si ese método se usa en ERB con `<%= %>`, ese retorno se serializa.
 - **`inspect` no es gratis.** Sobre objetos que envuelven scopes de ActiveRecord, inspeccionar significa ejecutar SQL. Un simple `to_s` puede significar cientos de queries.
-- **No te conformes con resolver, evita que vuelva a suceder.** Hace poco cambiamos de proveedor para medir performance en distintos módulos con datos de producción. Por lo tanto, luego de que esto sucedió se priorizó rehacer dashboards que miden explícitamente que el performance de la ficha esté en números saludables
+- **No te conformes con resolver, evita que vuelva a suceder.** Hace poco cambiamos de proveedor para medir performance en distintos módulos con datos de producción. Por lo tanto, luego de que esto sucedió se priorizó rehacer dashboards que miden explícitamente que el performance de la ficha esté en números saludables.
