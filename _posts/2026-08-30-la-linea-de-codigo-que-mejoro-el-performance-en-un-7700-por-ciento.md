@@ -1,0 +1,77 @@
+---
+layout: post
+title: El cambio de 2 líneas que mejoró en 7700% el performance de una página
+subtitle: Cómo un valor de retorno que nadie usaba se convirtió en el 99% del tiempo de carga de una página
+author: ginzunza
+tags: [ruby, rails, performance, profiling, flamegraph]
+images_path: "/assets/images/2026-08-30-la-linea-de-codigo-que-mejoro-el-performance-en-un-7700-por-ciento"
+date: 2026-08-30 12:00 -0400
+---
+La ficha del empleado de unos clientes tardaba 70 segundos en cargar. Después del fix, la ficha comenzó a responder en menos de 1 segundo (~78 veces más rápido). La solución fue agregar una sola instrucción: `nil`. En este post abordaremos cómo un valor de retorno que nadie usaba se convirtió en el 99% del tiempo de carga de la página, y cómo usar herramientas de profiling, y no la intuición (optimizar la DB), fue lo que resolvió el problema.
+
+
+## El inicio: 70 segundos para ver una ficha
+
+Un cliente (luego más) reportó que la ficha de sus empleados era inusable y que, por lo tanto, no podía trabajar. Coincidentemente empezaron a aparecer *timeouts* en los logs, lo que dio la idea de que podría haber sido introducido por un cambio reciente. Al reproducir el caso con [rack-mini-profiler](https://github.com/MiniProfiler/rack-mini-profiler), la request completa tardaba ~70 segundos, y el 99% de ese tiempo lo consumía un solo render: la cell del perfil del empleado, con 69,5 segundos y 569 queries SQL.
+
+Las hipótesis iniciales apuntaban a los sospechosos de siempre: queries lentas, alguna feature nueva, algún cálculo pesado en la vista, etc. El profiler descartó al primero de inmediato, ya que sólo el 0,4% del tiempo era SQL. El 99,6% restante era Ruby puro.
+
+![rack-mini-profiler antes del fix el render del perfil consumía 69.498 ms y 569 queries, con sólo 0,2% del tiempo en SQL]({{page.images_path}}/miniprofiler-antes.png)
+
+## El análisis: un flamegraph donde el protagonista era el Garbage Collector
+
+El flamegraph obtenido con [stackprof](https://github.com/tmm1/stackprof) mostró algo inesperado:
+
+- El 58% del tiempo era *garbage collection*: 43% *marking* y 15% *sweeping*.
+- El 39% del tiempo pasaba por `Array#inspect`, que terminaba en `CanCan::Rule#inspect` (37%) y `ActiveRecord::Core::ClassMethods#inspect` (25%).
+- Las 569 queries del render eran queries que nadie había escrito.
+
+Es decir, casi todo el tiempo de la request no era trabajo de la página. Era Ruby serializando objetos que nadie iba a leer, y el GC limpiando la gran cantidad de strings que esa serialización alocaba.
+
+Con la evidencia anterior, aún era difícil de saber en dónde estaba exactamente el problema, así como también era difícil comprender qué cambio lo introdujo, puesto que en Buk se hacen cientos de commits al día.
+
+## La causa: un valor de retorno que ERB serializaba sin que nadie lo pidiera
+
+Luego de tener toda la evidencia y entender que el problema estaba en Ruby en vez de la base de datos, ocupamos Claude para ver si nos facilitaba la parte más abstracta que era el análisis sobre qué parte del código era la involucrada. Con lo anterior, pudimos concluir lo siguiente:
+
+1. Los métodos `item` de nuestros widgets de formulario terminaban en `@items << {}`, por lo que retornaban el array `@items` completo.
+2. En ERB, `<%= widget.item do %>...<% end %>` llama `.to_s` sobre ese valor de retorno. Para un array, `.to_s` es `Array#inspect`: inspecciona recursivamente todo lo acumulado adentro.
+3. Entre los objetos acumulados había reglas de autorización de [CanCanCan](https://github.com/CanCanCommunity/cancancan), que tiene condiciones que son scopes de ActiveRecord. Inspeccionar cada regla materializaba sus scopes (las cientos de queries involucradas) y cargaba el schema de cada clase involucrada.
+
+Nada de esto era visible leyendo el código. El problema solo existía en la combinación de los tres.
+
+Por lo mismo, revertir no era una opción viable, ya que no era rápido detectar si había un commit culpable que deshacer y teníamos a muchos clientes bloqueados por la lentitud. El único camino era resolverlo.
+
+## La solución: retornar `nil`
+
+La corrección fue agregar `nil` como último valor de retorno de los métodos `item`:
+
+```ruby
+def item(...)
+  @items << { ... }
+  nil
+end
+```
+
+Con esto, `<%= widget.item do %>` retorna `nil.to_s`, que es un string vacío, sin gatillar ninguna inspección (`Array#inspect`). El contenido del bloque no se ve afectado, ya que el mecanismo de captura (`capture(&block)`) opera independientemente del valor de retorno, y el widget sigue renderizando los ítems desde su `@items` interno.
+
+El cambio completo fueron *2 líneas en 2 archivos*, omitiendo lo que sumó el hecho de agregarlo detrás de una *feature flag* para un rollout de menor riesgo.
+
+## El resultado: de 70 segundos a 0,9
+
+Luego de aplicar los cambios y volver a analizar, se obtuvo lo siguiente:
+
+- La request completa bajó de ~70 segundos a ~0,9 segundos: 78 veces más rápido, una mejora de 7.700% (si, siete mil setecientos porciento).
+- El render del perfil bajó de 69.498 ms a 95 ms, y sus queries de 569 a 28.
+
+![rack-mini-profiler después del fix la misma página respondía en menos de 1 segundo]({{page.images_path}}/miniprofiler-despues.png)
+
+## Conclusiones
+
+- **Analiza antes de optimizar.** Por lo general las hipótesis siempre parten sin evidencia y se inclinan por la base de datos o algún feature que ha ocasionado problemas en el pasado. Es importante ocupar las herramientas de profiling o monitoreo que se tienen disponibles. En este caso el profiler, el flamegraph y el *análisis de Claude* encontraron en minutos algo que en el pasado habría significado leer código, debugging y mucho trabajo manual.
+- **Si el GC es el protagonista, busca quién aloca.** Un 58% de tiempo en *garbage collection* no es un problema del GC: es el síntoma de que algo está creando objetos de forma masiva. Aquí eran los strings de `inspect`.
+- **Los valores de retorno implícitos de Ruby son API.** Un método que termina en `@items << {}` retorna el array completo aunque nadie lo pida. Si ese método se usa en ERB con `<%= %>`, ese retorno se serializa.
+- **`inspect` no es gratis.** Sobre objetos que envuelven scopes de ActiveRecord, inspeccionar significa ejecutar SQL. Un simple `to_s` puede significar cientos de queries.
+- **No te conformes con resolver, evita que vuelva a suceder.** Hace poco cambiamos de proveedor para medir performance en distintos módulos con datos de producción. Por lo tanto, luego de que esto sucedió se priorizó rehacer dashboards que miden explícitamente que el performance de la ficha esté en números saludables.
+
+Si te interesa trabajar en problemas como este, postula [aquí](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile).
