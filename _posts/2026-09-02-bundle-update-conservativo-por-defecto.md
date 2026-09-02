@@ -1,13 +1,18 @@
 ---
 layout: post
-title: 'Actualizar una gema no debería mover 74 líneas del Gemfile.lock'
-subtitle: "Por qué `bundle update` arrastra más de lo que le pides, y cómo lo resolvimos con un plugin de Bundler que vuelve el modo conservativo el default del proyecto."
+title: Actualizar una gema no debería mover 74 líneas del Gemfile.lock
+subtitle: Por qué `bundle update` arrastra más de lo que le pides, y cómo lo resolvimos
+  con un plugin de Bundler que vuelve el modo conservativo el default del proyecto.
 author: jpacheco
-tags: [ruby, bundler, gema, open-source, dependencias]
-images_path: /assets/images/2026-08-13-bundle-update-conservativo-por-defecto
+tags:
+- ruby
+- bundler
+- gema
+- open-source
+- dependencias
+images_path: "/assets/images/2026-08-13-bundle-update-conservativo-por-defecto"
 date: 2026-08-13 10:00 -0300
 ---
-
 Cualquiera que haya mantenido una aplicación Ruby on Rails medianamente grande conoce la escena. Necesitas actualizar **una** gema —digamos, `rails`— para aplicar un parche de seguridad o agarrar un bug fix. Ejecutas lo más obvio:
 
 ```sh
