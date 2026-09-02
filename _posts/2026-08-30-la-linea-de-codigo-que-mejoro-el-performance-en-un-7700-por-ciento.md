@@ -61,7 +61,7 @@ El cambio completo fueron *2 líneas en 2 archivos*, omitiendo lo que sumó el h
 
 Luego de aplicar los cambios y volver a analizar, se obtuvo lo siguiente:
 
-- La request completa bajó de ~70 segundos a ~0,9 segundos: 78 veces más rápido, una mejora de 7.700%.
+- La request completa bajó de ~70 segundos a ~0,9 segundos: 78 veces más rápido, una mejora de 7.700% (si, siete mil setecientos porciento).
 - El render del perfil bajó de 69.498 ms a 95 ms, y sus queries de 569 a 28.
 
 ![rack-mini-profiler después del fix la misma página respondía en menos de 1 segundo]({{page.images_path}}/miniprofiler-despues.png)
