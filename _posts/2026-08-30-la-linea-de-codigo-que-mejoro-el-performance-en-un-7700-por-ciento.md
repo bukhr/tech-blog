@@ -73,3 +73,5 @@ Luego de aplicar los cambios y volver a analizar, se obtuvo lo siguiente:
 - **Los valores de retorno implícitos de Ruby son API.** Un método que termina en `@items << {}` retorna el array completo aunque nadie lo pida. Si ese método se usa en ERB con `<%= %>`, ese retorno se serializa.
 - **`inspect` no es gratis.** Sobre objetos que envuelven scopes de ActiveRecord, inspeccionar significa ejecutar SQL. Un simple `to_s` puede significar cientos de queries.
 - **No te conformes con resolver, evita que vuelva a suceder.** Hace poco cambiamos de proveedor para medir performance en distintos módulos con datos de producción. Por lo tanto, luego de que esto sucedió se priorizó rehacer dashboards que miden explícitamente que el performance de la ficha esté en números saludables.
+
+Si te interesa trabajar en problemas como este, postula [aquí](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile).
