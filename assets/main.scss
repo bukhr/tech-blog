@@ -349,7 +349,18 @@ header.masthead-without-background {
       margin: 0;
     }
   }
-  
+}
+
+.header-home-banner {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+
+  @media only screen and (min-width: 1020px) {
+    margin-bottom: 2.5rem;
+  }
 }
 
 .header-home-grid {

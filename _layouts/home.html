@@ -3,6 +3,17 @@ layout: default
 ---
 <!-- Page Header -->
 
+  {% if page.background %}
+<header class="header-home">
+    <div class="header-home-grid">
+      <div class="header-home-text-container">
+        <img class="header-home-banner" src="{{ page.background | prepend: site.baseurl | replace: '//', '/' }}" alt="Banner de inscripciones" />
+        <h1 class="header-home-title">Lo que hacemos, aprendemos y pensamos en Buk.</h1>
+        <p class="header-home-text">Tendencias, producto y tecnología desde la mirada de quienes los construyen. </p>
+      </div>
+    </div>
+  </header>
+{% else %}
   <header class="header-home">
     <div class="header-home-grid">
       <div class="header-home-text-container">
@@ -11,6 +22,7 @@ layout: default
       </div>
     </div>
   </header>
+{% endif %}
 
   <div class="container">
     <div class="row">
