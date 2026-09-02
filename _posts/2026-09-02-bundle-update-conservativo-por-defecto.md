@@ -1,5 +1,6 @@
 ---
 layout: post
+background: "/assets/images/2026-08-13-bundle-update-conservativo-por-defecto/background.jpeg"
 title: Actualizar una gema no debería mover 74 líneas del Gemfile.lock
 subtitle: Por qué `bundle update` arrastra más de lo que le pides, y cómo lo resolvimos
   con un plugin de Bundler que vuelve el modo conservativo el default del proyecto.
