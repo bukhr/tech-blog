@@ -1,6 +1,6 @@
 ---
 layout: post
-title: La línea de código que mejoró el performance en un 7.700%
+title: El cambio de 2 líneas que mejoró en 7700% el performance de una página
 subtitle: Cómo un valor de retorno que nadie usaba se convirtió en el 99% del tiempo de carga de una página
 author: ginzunza
 tags: [ruby, rails, performance, profiling, flamegraph]
