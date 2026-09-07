@@ -86,3 +86,5 @@ FIVOLT no terminó de un día para otro. Fue un esfuerzo sostenido de varios equ
 Así construimos en Buk: apostando por una arquitectura robusta y escalable por sobre la novedad, y pagando la deuda técnica cuando corresponde, para que el producto siga siendo confiable a largo plazo. No es la parte más vistosa de la ingeniería, pero es la que nos permite seguir construyendo con confianza.
 
 Al final, eso es: *The beauty of boring tech*.
+
+Si te interesa trabajar en problemas como este, postula [aquí](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile).

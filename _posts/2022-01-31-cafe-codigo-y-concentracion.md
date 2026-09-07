@@ -61,4 +61,4 @@ Para mí, uno de los sonidos ambiente más agradables y que me ayuda con la conc
 
 Quisiera cerrar comentando que para mí y para muchos desarrolladores, el café y la programación van de la mano. Una tacita nos ayuda a reunirnos, a romper el hielo cuando no nos conocemos y a compartir en grupo. A la vez, es una invitación a partir el día y concentrarse en lo que tú y tu computador necesitan resolver.
 
-Si el romance entre **Buk** y el café te motiva y sientes que nuestra cultura te representa, prepárate porque [estamos contratando!](https://info.buk.cl/reclutamiento-buk-devs?utm_source=blog-eng&utm_medium=link&utm_campaign=outreach)
+Si el romance entre **Buk** y el café te motiva y sientes que nuestra cultura te representa, prepárate porque [estamos contratando!](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile)

@@ -84,3 +84,5 @@ En internet puedes encontrar comandos hechos para cosas más complejas, como por
 `branches = branch --sort=-committerdate --format='%(HEAD)%(color:yellow)%(refname:short) | %(color:bold green)%(committerdate:relative) | %(color:blue)%(subject)%(color:reset)' --color=always`
 
 Posiblemente ocupes comandos distintos y hasta únicos, pero te aseguro que más de uno lo ocupas lo suficiente para que se merezca un alias. Te invito a aplicar alias a tus comandos, ahorrar un par de minutos y simplificarte la vida.
+
+Si te interesa trabajar en problemas como este, postula [aquí](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile).

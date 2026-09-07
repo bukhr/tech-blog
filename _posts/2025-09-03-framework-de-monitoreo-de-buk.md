@@ -119,3 +119,5 @@ Al simplificar procesos complejos, hemos logrado que el monitoreo sea responsabi
 A nivel cultural, ahora entendemos que la observabilidad no es un componente adicional, sino una parte fundamental del diseño desde las etapas iniciales del desarrollo.
 
 La observabilidad efectiva no es solo una ventaja técnica, es una ventaja competitiva que permite construir sistemas más robustos, confiables y centrados en el usuario.
+
+Si te interesa trabajar en problemas como este, postula [aquí](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile).

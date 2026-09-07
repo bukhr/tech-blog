@@ -150,3 +150,5 @@ Las instancias Spot permiten ahorros sustanciales —en algunos casos, reduccion
 - [Horizontal Pod Autoscaler (HPA)](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/)
 - [EKS y mejores prácticas con Spot](https://docs.aws.amazon.com/eks/latest/userguide/eks-optimized-spot.html)
 - [AWS Node Termination Handler](https://github.com/aws/aws-node-termination-handler)
+
+Si te interesa trabajar en problemas como este, postula [aquí](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile).

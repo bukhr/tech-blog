@@ -188,3 +188,5 @@ La optimización de procesos de CI/CD mediante el uso inteligente del caché de 
 Esta solución mejoró significativamente los tiempos de build, especialmente en proyectos con bases de código grandes donde los tiempos de construcción pueden convertirse en un impedimento para la velocidad de desarrollo.
 
 Aún queda margen de mejora, el caché de assets se reutiliza en todos los PRs, por lo que se puede optimizar aún más. La generación de estos tampoco es óptima aún. Una estrategia bastante interesante puede ser buscar mecanismos para que el procedimiento en su build de assets se haga más eficiente.
+
+Si te interesa trabajar en problemas como este, postula [aquí](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile).

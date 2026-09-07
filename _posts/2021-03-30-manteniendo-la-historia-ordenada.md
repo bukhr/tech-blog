@@ -90,3 +90,5 @@ Es muy importante tener presente que cuando hagamos push al repositorio vamos a 
 ```sh
 git push --force-with-lease
 ```
+
+Si te interesa trabajar en problemas como este, postula [aquí](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile).

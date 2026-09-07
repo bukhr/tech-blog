@@ -50,4 +50,4 @@ Así como el software crece, los desarrolladores también crecen. A medida que e
 
 **En Buk tenemos nuestro propios Vengadores** 🦸🦸‍♂️🦸‍♀️ quienes día a día lidian con los problemas que encontraron los clientes. Gracias a ellos podemos tener una ciudad tranquila, sin problemas para desarrollar y sin miedo de un posible ataque del villano **BUG** 🐛.
 
-**BUK** sigue creciendo **¡y necesitamos más Héroes como tú!** 🦸. Si quieres ser parte de los **Avengers** postula en el siguiente [link](https://info.buk.cl/reclutamiento-buk-devs?utm_source=blog-eng&utm_medium=link&utm_campaign=outreach).
+**BUK** sigue creciendo **¡y necesitamos más Héroes como tú!** 🦸. Si quieres ser parte de los **Avengers** postula en el siguiente [link](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile).

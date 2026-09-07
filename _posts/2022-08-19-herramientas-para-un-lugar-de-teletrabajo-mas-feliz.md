@@ -61,4 +61,4 @@ Además cuenta con un chat, con llamada de audio y con la posibilidad de que los
 
 >> En Productos Internos lo utilizamos mucho cuando un dev necesita ayuda de otro dev, y es muy útil para intervenir el código de otra persona para demostraciones in-situ de las decisiones de programación que se toman en el momento.
 
-Si te interesa el trabajo remoto o el formato híbrido, te parece atractiva nuestra manera de integrar nuevas herramientas a nuestro día a día y sientes que puedes desarrollar tu potencial desde cualquier lugar, [**postula a Buk**](https://buk.buk.cl/trabaja-con-nosotros).
+Si te interesa el trabajo remoto o el formato híbrido, te parece atractiva nuestra manera de integrar nuevas herramientas a nuestro día a día y sientes que puedes desarrollar tu potencial desde cualquier lugar, [**postula a Buk**](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile).

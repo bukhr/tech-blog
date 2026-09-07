@@ -56,3 +56,5 @@ Más allá del conocimiento técnico, desarrollar las habilidades blandas es fun
 Busco contribuir a través de mi conocimiento y experiencia, promoviendo la enseñanza (mediante diversas charlas realizadas e impulsando esta práctica en el equipo de desarrollo), la colaboración (invitando a los distintos desarrolladores a contribuir con las iniciativas) y pensar fuera de la caja (proponiendo soluciones innovadoras).
 
 Sin duda, el mayor desafío es el stack tecnológico, ya que soy muy nuevo en Ruby on Rails.
+
+Si quieres ser parte del equipo, postula [aquí](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile).

@@ -325,3 +325,5 @@ La implementación de pruebas automatizadas es fundamental a lo largo de todo el
 La prioridad máxima debe ser la continuidad operativa y la seguridad de los datos. Para ello, se recomienda trabajar con atributos nuevos y, si es posible, emplear scripts de validación que aseguren la sincronización de los datos en el entorno de producción, minimizando así el riesgo de sorpresas inesperadas.
 
 Se ha elaborado una guía detallada del proceso de migración, tomando como ejemplo práctico el modelo `ApiAuthToken`. Es importante que este procedimiento se aplique de manera similar a todos los modelos reales del proyecto que dependen de la gema `attr_encrypted` para el cifrado de datos.
+
+Si te interesa trabajar en problemas como este, postula [aquí](https://www.takealuk.com/empleos-buk?q%5Bname_cont%5D=&countries%5B%5D=Chile).
