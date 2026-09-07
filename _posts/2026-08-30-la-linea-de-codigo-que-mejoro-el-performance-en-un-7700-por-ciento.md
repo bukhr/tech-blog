@@ -5,6 +5,7 @@ subtitle: Cómo un valor de retorno que nadie usaba se convirtió en el 99% del 
 author: ginzunza
 tags: [ruby, rails, performance, profiling, flamegraph]
 images_path: "/assets/images/2026-08-30-la-linea-de-codigo-que-mejoro-el-performance-en-un-7700-por-ciento"
+background: "/assets/images/2026-08-30-la-linea-de-codigo-que-mejoro-el-performance-en-un-7700-por-ciento/background.jpeg"
 date: 2026-08-30 12:00 -0400
 ---
 La ficha del empleado de unos clientes tardaba 70 segundos en cargar. Después del fix, la ficha comenzó a responder en menos de 1 segundo (~78 veces más rápido). La solución fue agregar una sola instrucción: `nil`. En este post abordaremos cómo un valor de retorno que nadie usaba se convirtió en el 99% del tiempo de carga de la página, y cómo usar herramientas de profiling, y no la intuición (optimizar la DB), fue lo que resolvió el problema.
