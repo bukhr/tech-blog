@@ -29,7 +29,7 @@ El problema es **lo otro** que aparece: dependencias transitivas (transitive dep
 
 ![Comparación entre bundle update rails y bundle update --conservative rails: en el primer caso las dependencias transitivas compartidas también se mueven]({{ page.images_path }}/alcance-del-update.svg)
 
-Este post cuenta cómo resolvimos ese problema de raíz con **[`bundler-conservative-update`](https://rubygems.org/gems/bundler-conservative-update)**, un plugin de Bundler que vuelve el `bundle update` conservativo por defecto, y cómo funciona por dentro.
+Este post cuenta cómo resolvimos ese problema de raíz con **[`bundler-conservative-update`](https://rubygems.org/gems/bundler-conservative-update)**, un plugin de Bundler que vuelve el `bundle update` conservativo por defecto, y cómo funciona por dentro. No es una herramienta vistosa: es un ajuste chico sobre una pieza que usamos todos los días, pensado para que el monolito siga siendo predecible año tras año.
 
 ## Por qué pasa: `install` fija, `update` re-resuelve
 
@@ -213,3 +213,7 @@ Y para la tarea periódica de actualizar todo no hace falta ninguna variable: `-
 Para nosotros encaja con una idea simple: las políticas que benefician a todo el proyecto deberían vivir en el proyecto —en este caso, en el `Gemfile`— y no depender de que cada persona recuerde un flag.
 
 Si la idea te sirve, la gema está en [RubyGems](https://rubygems.org/gems/bundler-conservative-update) y el código en [GitHub](https://github.com/bukhr/bundler-conservative-update). Las contribuciones y reportes de bugs son bienvenidos.
+
+Así construimos en Buk: con herramientas maduras como Ruby, Rails y Bundler, y cuidando que cada cambio sea intencional, para que el producto siga siendo confiable y estable a largo plazo. Un `Gemfile.lock` que solo cambia cuando lo pedimos no es la parte más vistosa de la ingeniería, pero es la que nos permite actualizar con confianza.
+
+Al final, eso es: *The beauty of boring tech*.
